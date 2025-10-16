@@ -11,11 +11,43 @@ a{
 }
 
 a:hover{
-    color: var(--junglegreen);
+    color: var(--gold);
+}
+
+button{
+    cursor:pointer;
+    width:fit-content;
+    border: solid 0.2rem black;
+    padding: 0.5rem 2rem;
+    box-sizing: border-box; /* ensures border doesn’t change layout */
+    background-color: transparent;
+    transition: all 0.3s ease; /* makes the hover effect animate smoothly instead of changing instantly 
+    ease → starts slow, speeds up, then slows down at the end (natural feel)
+    linear → constant speed throughout
+    ease-in → starts slow, then speeds up
+    ease-out → starts fast, ends slow
+    ease-in-out → starts and ends slow, speeds up in the middle*/
+}
+
+button:hover{
+    color: var(--gold);
+    border-color: var(--gold);
 }
 
 section{
     padding:6rem 10rem;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+.landingpage{
+    background-image: url(../images/wheat.jpg);
+    /*background-image: url(../images/maize_plantation.jpg);*/
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
 }
 
 /* HOME */
@@ -38,7 +70,6 @@ section{
 
 /* ABOUT US */
 .about-us{
-    background-color: var(--gold);
     height:100vh;
     width:100%;
     display: flex;
@@ -51,6 +82,11 @@ section{
 
 .about-us .image img{
     height:calc(100vh - 12rem);
+    width:90%;
+    object-fit: cover;
+    /*The object-fit: cover; makes the image behave like a background image (fills the box, crops evenly)
+    You'll notice that if you remove object-fit: cover; it'll look squeezed cz the image is bigger than the
+    space allocated so use it to make it look nice*/
 }
 
 .about-us .text{
@@ -66,8 +102,8 @@ section{
 }
 
 .about-us .text .content{
-    border-top: solid 0.2rem black;
-    border-bottom: solid 0.2rem black;
+    border-top: solid 0.3rem var(--gold);
+    border-bottom: solid 0.3rem var(--gold);
     padding:1rem 0;
 }
 
@@ -77,14 +113,11 @@ section{
 
 .about-us .text .button{
     align-self: flex-end; /*align-self only accepts: auto | flex-start | flex-end | center | baseline | stretch . So this will align to the right*/
-    width:fit-content;
-    border: solid 0.2rem black;
-    padding: 0.5rem 2rem;
 }
 
 /* VISION */
 .vision{
-    background-color: var(--junglegreen);
+    border-top: solid 0.2rem var(--gold);
     height:100vh;
     width:100%;
     /*padding: 0 0; I'm overriding the default padding I set for all sections*/
@@ -150,14 +183,65 @@ section{
 
 /* PRODUCTS */
 .products{
-    background-color: var(--gold);
+    border-top: solid 0.2rem var(--gold);
     height:100vh;
 }
 
+.products h1{
+    font-size: 7rem;
+    text-align: center;
+}
+
+.products .example{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    justify-items: center;
+    gap:5rem;
+    /*background-color: var(--junglegreen);*/
+    width: 80rem;
+    padding:2.5rem 1rem;
+}
+
+.products .example .image{
+    width:50%;
+    display: flex;
+    flex-direction: column;/*So that the flex-end of the image below can be right for the image. See explanation below*/
+}
+
+.products .example .image img{
+    width:27rem;
+    height: 33rem;
+    align-self: flex-end;
+    /*align-self: flex-end -> for column moves it to the right while for row, moves it to the bottom
+    If I hadn't specified that the flex-direction is column then instead I wouldv'e used margin-left:auto
+    justify-self: flex-end doesn't work on flex items so if u try to use it, nothing will happen*/
+}
+
+.products .example .about{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.products .example .about h2{
+    font-size: 4rem;
+}
+
+.products .example .about p{
+    border-top:solid 0.2rem black;
+    border-bottom:solid 0.2rem black;
+    padding: 2rem 0;
+}
+
+.products .example .about button{
+  align-self: flex-end;  
+}
 
 /* TESTIMONIALS */
 .testimonials{
-    background-color: var(--junglegreen);
+    border-top: solid 0.2rem var(--gold);
     height: 100vh;
     width: 100%;
     text-align: center;
@@ -170,22 +254,86 @@ section{
 .testimonials .content{
     display: flex;
     justify-self: center;
+    gap:7rem;
+    margin-top: 2.5rem;
 }
 
 .testimonials img{
     border-radius: 50%;
+    border:solid 0.2rem black;
     height:5rem;
+    width:5rem;
+    align-self: center;
 }
 
-.testimonials .content:nth-child(1), .testimonials .content:nth-child(2), .testimonials .content:nth-child(3){
+/*.content:nth-child(1) → checks .content’s position. So it will select content itself if it is the first child of its parent(testimonials) but not the children of .content
+.content :nth-child(1) → checks the position of elements inside .content so this is the one that targets content's children.
+Please be careful with the spacing cz they clearly mean different things
+If you want to select the children with no spacing u'll do this:
+.testimonials .content > div:nth-child(1). Now with this one it will check the divs inside content then select the 1st one
+*/
+
+.testimonials .content > div:nth-child(1), .testimonials .content > div:nth-child(2), .testimonials .content > div:nth-child(3){
     background-color: var(--gold);
-    height:calc(100% - 12rem);
-    width: 100rem;
-    padding: 1rem 1rem;
+    height:35rem;
+    padding: 3rem 3rem;
 }
 
+.testimonials .content > div:nth-child(1) h2, .testimonials .content > div:nth-child(2) h2, .testimonials .content > div:nth-child(3) h2{
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.testimonials .content > div:nth-child(1) p, .testimonials .content > div:nth-child(2) p, .testimonials .content > div:nth-child(3) p{
+    border-top: solid 0.2rem black;
+    padding: 2rem 0;
+    height: 17rem;
+    font-style: italic;
+}
 
 /* CONTACTS */
 .contacts{
+    border-top: solid 0.2rem var(--gold);
+    height: calc(100vh - 4rem);
+    display:flex;
+    /*To make the content appear at the middle of the page*/
+    align-items: center;
+    justify-content: center;
+    /*End*/
+}
+
+.contacts .content{
     background-color: var(--gold);
+    width:fit-content;
+    padding: 3rem 2rem;
+}
+
+.contacts h1{
+    font-size: 7rem;
+    text-align: center;
+    border-bottom: solid 0.2rem black;
+    padding-bottom: 1rem;
+}
+
+.contacts img{
+    height: 4rem;
+    width: 4rem;
+}
+
+.contacts .info{
+    display: flex;
+    width:50rem;
+    gap:5rem;
+    justify-self: center;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.contacts .info .right, .contacts .info .left{
+    /*background-color: aliceblue;*/
+    width:25rem;
+    display: flex;
+    flex-direction: column;
+    gap:4rem;
 }

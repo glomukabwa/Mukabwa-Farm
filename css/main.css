@@ -11,7 +11,7 @@ a{
 }
 
 a:hover{
-    color: var(--junglegreen);
+    color: var(--gold);
 }
 
 body{
@@ -28,13 +28,12 @@ body{
 
 /* HEADER */
 header{
-    height:70px;
-    background-color: yellow;
+    height:7rem;
     width:100%; /*100vw will include the scrollbars and I don't want that*/
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 15px;
+    padding: 0 1.5rem;
 }
 
 header .logo{
@@ -46,12 +45,12 @@ header .logo{
 }
 
 header .logo img{
-    width:20px;
+    width:2rem;
     border-radius: 50%;
 }
 
 header .logo p{
-    padding-left:10px;
+    padding-left:1rem;
 }
 
 header .pages{
@@ -65,7 +64,9 @@ header .pages ul{
 
 /* FOOTER */
 footer{
-    background-color: yellow;
-    text-align: center;
-    padding:10px 0;
+    background-color: var(--gold);
+    height:4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
