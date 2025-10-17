@@ -4,6 +4,10 @@
     --junglegreen:#1A3F22;
     --papayaorange:#E07A2F;
     --jungle2:#1B6A59;
+    --dust1:#c7c1bd;
+    --green2:#828059;
+    --basecolor:#444B3C;
+    --supportcolor:#533024;
 }
 
 a{
@@ -64,9 +68,10 @@ header .pages ul{
 
 /* FOOTER */
 footer{
-    background-color: var(--gold);
+    background-color: var(--basecolor);
     height:4rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: black;
 }

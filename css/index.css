@@ -2,12 +2,18 @@
     font-size: 62.5%;
     --gold:#D99201;
     --junglegreen:#1A3F22;
-    --papayaorange:#E07A2F;
-    --jungle2:#1B6A59;
+    /*test 1*/
+    --dust1:#c7c1bd;
+    --green2:#828059;
+    --basecolor:#0F1E0F;
+    --supportcolor:#AB7843;
+    /*--support2:#FCFFF5;*/
+    --support2:#ffffff;
 }
 
 a{
     cursor:pointer;
+    transition: all 0.3s ease;
 }
 
 a:hover{
@@ -17,8 +23,8 @@ a:hover{
 button{
     cursor:pointer;
     width:fit-content;
-    border: solid 0.2rem black;
-    padding: 0.5rem 2rem;
+    border: solid 0.2rem var(--supportcolor);
+    padding: 0.5rem 3rem;
     box-sizing: border-box; /* ensures border doesn’t change layout */
     background-color: transparent;
     transition: all 0.3s ease; /* makes the hover effect animate smoothly instead of changing instantly 
@@ -29,9 +35,27 @@ button{
     ease-in-out → starts and ends slow, speeds up in the middle*/
 }
 
+button::after{
+    /*This ia a pseudo element. It will add what u will specify after every button. U'll see that there are other pseudoelements like before,
+    It helps that you don't have to add things in html, you can use pseudo elements to add them. Chat describes pseaudo elements as sth that allows u to add virtual content to actual content in html. I think it says virtual cz this element doesn't exist in html, it is added here
+    one colon(:) is for pseudo classes and two colons (::) is for pseudo elements*/
+    content: "⟶";/*we can't use &rArro like we did in html here so we have to either get this from the internet or get its unicode like we did in java with emojis*/
+    color: var(--basecolor);/*color affects not only font but pseudo elemnts too*/
+    position:relative;/*I'm using this cz I want the arrow to move more to the right making it look animated when I hover. See y I didn't use margin below*/
+    left:1rem;
+    /*margin-left: 1rem;/*I've noticed that when I use margin, when I hover, it is the words of the button that move to the left and not the arrow itself*/
+    transition: all 0.3s ease;
+}
+
 button:hover{
     color: var(--gold);
     border-color: var(--gold);
+}
+
+button:hover::after{
+    color:var(--gold);
+    left:1.5rem;/*The hover has to have more pixels in the left than how it was initially(1rem). Plz note that 1.5rem is relative to its default page flow not its initial position so if u make it 1 rem like its initial position, there will be no movement*/
+    /*margin-left: 1.5rem;*/
 }
 
 section{
@@ -39,15 +63,21 @@ section{
 }
 
 body{
-    background-color: whitesmoke;
+    background-color: var(--support2);
+    color: var(--basecolor);
 }
 
 .landingpage{
-    background-image: url(../images/wheat.jpg);
+    /*background-image: url(../images/wheat.jpg);*/
     /*background-image: url(../images/maize_plantation.jpg);*/
+    /*background-image:url(../images/sunny\ maize.jpg);*/
+    /*background-image: url(../images/little_plant.jpeg);*/
+    background-image: url(../images/cows.jpg);
+    /*background-image: url(../images/maize_and_sky.jpg);*/
     background-size: cover;
     background-position: center;
     background-repeat:no-repeat;
+    color: var(--basecolor);
 }
 
 /* HOME */
@@ -70,6 +100,7 @@ body{
 
 /* ABOUT US */
 .about-us{
+    border-top: solid 0.3rem var(--support2);
     height:100vh;
     width:100%;
     display: flex;
@@ -102,8 +133,8 @@ body{
 }
 
 .about-us .text .content{
-    border-top: solid 0.3rem var(--gold);
-    border-bottom: solid 0.3rem var(--gold);
+    border-top: solid 0.3rem var(--supportcolor);
+    border-bottom: solid 0.3rem var(--supportcolor);
     padding:1rem 0;
 }
 
@@ -115,9 +146,153 @@ body{
     align-self: flex-end; /*align-self only accepts: auto | flex-start | flex-end | center | baseline | stretch . So this will align to the right*/
 }
 
+/* PRODUCTS */
+.products{
+    border-top: solid 0.2rem var(--support2);
+    height:100vh;
+    background-color: var(--supportcolor);
+}
+
+.products h1{
+    font-size: 7rem;
+    text-align: center;
+}
+
+.productSwiper{
+    width:100%;
+    height:85%;
+}
+
+.products .swiper-content{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    justify-items: center;
+    gap:5rem;
+    /*background-color: var(--junglegreen);*/
+    width: 80rem;
+    padding:2.5rem 1rem;
+}
+
+.products .swiper-content .image{
+    width:50%;
+    display: flex;
+    flex-direction: column;/*So that the flex-end of the image below can be right for the image. See explanation below*/
+}
+
+.products .swiper-content .image img{
+    width:27rem;
+    height: 33rem;
+    align-self: flex-end;
+    /*align-self: flex-end -> for column moves it to the right while for row, moves it to the bottom
+    If I hadn't specified that the flex-direction is column then instead I wouldv'e used margin-left:auto
+    justify-self: flex-end doesn't work on flex items so if u try to use it, nothing will happen*/
+}
+
+.products .swiper-content .about{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.products .swiper-content .about h2{
+    font-size: 4rem;
+}
+
+.products .swiper-content .about p{
+    border-top:solid 0.2rem var(--support2);
+    border-bottom:solid 0.2rem var(--support2);
+    padding: 2rem 0;
+}
+
+.products .swiper-content .about button{
+  align-self: flex-end; 
+  border-color: var(--support2); 
+}
+
+/*This part isn't necessary. I'm just using it to learn positioning. If the container has the right height which gives all the elements enough space, like the height I'm using(comment all this out and u'll see that we don't need to add or remove any space btwn image and dots), u don't need this.*/
+.products .swiper-pagination{
+    position:relative;/*This means that the position of this element can now be placed in relation to its original place in the normal page flow*/
+    bottom:2rem;/*This means that add 2rem at the bottom from where it is supposed to be if it was placed without styling like margins that have been used in the default swiper library*/
+    /*I've tried using 1rem and the dots show in half. That means that with thiss height I've given the swiper(85%), if the styling in the swiper-bundle.min.css was ignored or was not there, 
+    the dots wouldn't be visible cz the space wouldn't be enough(default page flow) so 1rem pushes it upwards a bit but the 2rem here makes it visible*/
+}
+
+/*Position absolute
+This means the element is completely removed from normal flow — it no longer affects other elements’ positions.
+It’s positioned relative to the nearest positioned ancestor (an ancestor with position: relative, absolute, or fixed).
+.parent {
+  position: relative;
+}
+
+.child {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+✅ What happens:
+.child goes to the top-right corner of its .parent.
+It does not push or pull other elements — it floats above them.
+If there’s no positioned ancestor, it will be positioned relative to the <body> (the entire page).
+
+🧠 Use absolute when:
+You want to overlay or float something (like Swiper arrows, tooltips, or modals).
+You want an element’s position to depend on a specific container, not the normal flow.
+
+Plz note that: top:30px; will do the same thing as bottom:30px;
+*/
+
+/*Overriding the default styling of the navigation and pagination buttons*/
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--support2); 
+  /* In the default css, the arrows have been placed as a pseudo elements ::after then content: "<";
+  You know now that pseudo elements are also affected by color so that's y we're using this to make the arrows change color*/ 
+  background-color: rgba(0, 0, 0, 0.3);/*If u look at the page u'll notice that the arrows have a background. I found out from chat that u can make them have a background and I wanted to demonstrate it so that I can use it in future*/
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding:1rem 1rem;/*If u don't include this, the arrows look like they are getting out of the background. We want them to look like they are inside the background so that's y we put this*/
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+}
+ 
+/*Or you can put ur own icons:
+/*.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none; /* hides default Swiper arrows 
+}
+
+/*This is what u do in html to put ur own icons
+<div class="swiper-button-next"><i class="fa fa-arrow-right"></i></div>
+<div class="swiper-button-prev"><i class="fa fa-arrow-left"></i></div>
+I am content with the default arrows rn so I won't put my own icons but I wanted to put this here for future reference
+*/
+
+.swiper-pagination-bullet{
+    /*U're probably wondering how I'm targetting this and it's not in the html. It's in the default swiper css.
+    Press Ctrl + F then search pagination or pagination-bullets to see how the bullets have been styled then now u can see how to change 
+    them. The page is minified though so it's so hard to read(minified code makes ur website load faster) so tbh I asked chat for help*/
+    transition:all 0.3s ease;/*So that the zooming in and color transformation can look animated and not instant. If you wanted to 
+    target eg only the scaling, u'd put transform where all is, if it was only background-color, u'd put it where all is*/
+}
+
+.swiper-pagination-bullet-active{
+    background-color:var(--gold);/*bullet, different from the navigation arrows are formed using background-color, border-radius etc so
+    that's why we target background-color to change them and not color like we used in navigation arrows*/
+    transform:scale(1.3);/*This makes it zoom in by 30%. If you wanted to makes sth zoom out, u'd do eg scale(0.7) and it would decrease
+    by 30%. So the original size is 1 and u are either adding or subtracting 0.sth*/
+}
+
+
 /* VISION */
 .vision{
-    border-top: solid 0.2rem var(--gold);
+    border-top: solid 0.2rem var(--support2);
     height:100vh;
     width:100%;
     /*padding: 0 0; I'm overriding the default padding I set for all sections*/
@@ -181,67 +356,9 @@ body{
     font-size: 2rem;
 }
 
-/* PRODUCTS */
-.products{
-    border-top: solid 0.2rem var(--gold);
-    height:100vh;
-}
-
-.products h1{
-    font-size: 7rem;
-    text-align: center;
-}
-
-.products .example{
-    display: flex;
-    justify-self: center;
-    align-items: center;
-    justify-items: center;
-    gap:5rem;
-    /*background-color: var(--junglegreen);*/
-    width: 80rem;
-    padding:2.5rem 1rem;
-}
-
-.products .example .image{
-    width:50%;
-    display: flex;
-    flex-direction: column;/*So that the flex-end of the image below can be right for the image. See explanation below*/
-}
-
-.products .example .image img{
-    width:27rem;
-    height: 33rem;
-    align-self: flex-end;
-    /*align-self: flex-end -> for column moves it to the right while for row, moves it to the bottom
-    If I hadn't specified that the flex-direction is column then instead I wouldv'e used margin-left:auto
-    justify-self: flex-end doesn't work on flex items so if u try to use it, nothing will happen*/
-}
-
-.products .example .about{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap:2rem;
-}
-
-.products .example .about h2{
-    font-size: 4rem;
-}
-
-.products .example .about p{
-    border-top:solid 0.2rem black;
-    border-bottom:solid 0.2rem black;
-    padding: 2rem 0;
-}
-
-.products .example .about button{
-  align-self: flex-end;  
-}
-
 /* TESTIMONIALS */
-.testimonials{
-    border-top: solid 0.2rem var(--gold);
+/*.testimonials{
+    border-top: solid 0.2rem var(--support2);
     height: 100vh;
     width: 100%;
     text-align: center;
@@ -260,7 +377,7 @@ body{
 
 .testimonials img{
     border-radius: 50%;
-    border:solid 0.2rem black;
+    border:solid 0.2rem var(--support2);
     height:5rem;
     width:5rem;
     align-self: center;
@@ -271,10 +388,10 @@ body{
 Please be careful with the spacing cz they clearly mean different things
 If you want to select the children with no spacing u'll do this:
 .testimonials .content > div:nth-child(1). Now with this one it will check the divs inside content then select the 1st one
-*/
+
 
 .testimonials .content > div:nth-child(1), .testimonials .content > div:nth-child(2), .testimonials .content > div:nth-child(3){
-    background-color: var(--gold);
+    background-color: var(--supportcolor);
     height:35rem;
     padding: 3rem 3rem;
 }
@@ -286,15 +403,15 @@ If you want to select the children with no spacing u'll do this:
 }
 
 .testimonials .content > div:nth-child(1) p, .testimonials .content > div:nth-child(2) p, .testimonials .content > div:nth-child(3) p{
-    border-top: solid 0.2rem black;
+    border-top: solid 0.2rem var(--support2);
     padding: 2rem 0;
     height: 17rem;
     font-style: italic;
-}
+}*/
 
 /* CONTACTS */
 .contacts{
-    border-top: solid 0.2rem var(--gold);
+    border-top: solid 0.2rem var(--support2);
     height: calc(100vh - 4rem);
     display:flex;
     /*To make the content appear at the middle of the page*/
@@ -304,7 +421,7 @@ If you want to select the children with no spacing u'll do this:
 }
 
 .contacts .content{
-    background-color: var(--gold);
+    background-color: var(--supportcolor);
     width:fit-content;
     padding: 3rem 2rem;
 }
@@ -312,7 +429,7 @@ If you want to select the children with no spacing u'll do this:
 .contacts h1{
     font-size: 7rem;
     text-align: center;
-    border-bottom: solid 0.2rem black;
+    border-bottom: solid 0.2rem var(--support2);
     padding-bottom: 1rem;
 }
 

@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="icon" href="" type="image/x-ico">
+    <!--Note the order: favicon, reset stylesheet to remove the default browser styling, external libraries like the js swiper then the personal stylesheet
+    If you put the js stylesheet after ur personal stylesheet, it might override ur personal styling. You want ur personal styling to have the final say-->
     <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../JavaScript/Swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/index.css">
 </head>
@@ -49,9 +52,108 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
                 </div>
                 <div class="button">
-                    <button>SEE MORE &RightArrow;</button>
+                    <button>SEE MORE</button>
                 </div>
             </div>
+        </section>
+
+        <section class="products">
+            <h1>Our Products</h1>
+            <div class="swiper productSwiper"><!--This div has to have 2 names, see why below-->
+                <!--The above div is for specifying to js that this is the html element which will be an object of the swiper class from the Swiper.js library. It includes all slides, navigation buttons and the pagination-->
+                <!--Above we need to write swiper before the name we want to give it eg productSwiper cz Swiper library in js requires this. It has its own css that targets a class called swiper so if we don't do this, we won't see the swiping effect-->
+                <!--Also, it helps us have as many swipers as we want in the same file eg (swiper testimonialsSwiper), (swiper moreinfoSwiper) etc-->
+                <div class="swiper-wrapper"><!--This wrapper contains all the pages(slides) that will be shown. Plz note that it doesn't include the navigation buttons(left or right arrow) and the pagination(the dots at the bottom)-->
+                    <div class="swiper-slide"><!--This div tells the swiper that the div inside me is a single page/slide. Note that every content is wrapped with this specific class. Chat said that u can't put all the swiper-content in one div with this name cz there is a specific structure that needs to be followed-->
+                        <!--If you put all the swiper-content in one single div called swiper-slide, you are gonna have one single slide that displays all the slides u want in a squeezed manner cz swiper class in js will register that the swiper created has only one page-->
+                        <!--So plz follow the structure: swiper name, wrapper, slide, content-->
+                        <div class="swiper-content">
+                            <div class="image">
+                                <img src="../images/black image.jpeg" alt="">
+                            </div>
+                            <div class="about">
+                                <h2>Milk</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <button>READ MORE</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper-content">
+                            <div class="image">
+                                <img src="../images/black image.jpeg" alt="">
+                            </div>
+                            <div class="about">
+                                <h2>Beef</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <button>READ MORE</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper-content">
+                            <div class="image">
+                                <img src="../images/black image.jpeg" alt="">
+                            </div>
+                            <div class="about">
+                                <h2>Chicken</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <button>READ MORE</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper-content">
+                            <div class="image">
+                                <img src="../images/black image.jpeg" alt="">
+                            </div>
+                            <div class="about">
+                                <h2>Eggs</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <button>READ MORE</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper-content">
+                            <div class="image">
+                                <img src="../images/black image.jpeg" alt="">
+                            </div>
+                            <div class="about">
+                                <h2>Pigs</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <button>READ MORE</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper-content">
+                            <div class="image">
+                                <img src="../images/black image.jpeg" alt="">
+                            </div>
+                            <div class="about">
+                                <h2>Maize</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <button>READ MORE</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Navigation buttons -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+                <!-- Pagination dots -->
+                <div class="swiper-pagination"></div>
+            </div>
+
         </section>
 
         <section class="vision">
@@ -74,21 +176,7 @@
             </div>
         </section>
 
-        <section class="products">
-            <h1>Our Products</h1>
-            <div class="example">
-                <div class="image">
-                    <img src="../images/black image.jpeg" alt="">
-                </div>
-                <div class="about">
-                    <h2>Dairy</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <button>READ MORE &RightArrow;</button>
-                </div>
-            </div>
-        </section>
-
-        <section class="testimonials">
+        <!--<section class="testimonials">
             <h1>Testimonials</h1>
             <div class="content">
                 <div>
@@ -107,7 +195,7 @@
                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
                 </div>
             </div>
-        </section>
+        </section>-->
 
         <section class="contacts">
             <div class="content">
@@ -144,5 +232,8 @@
     <footer>
         <p>&copy; Mukabwa's farm</p>
     </footer>
+    <script src="../JavaScript/Swiper/swiper-bundle.min.js"></script>
+    <script src="../JavaScript/swiper.js"></script>
+    <!--The Swiper library must be loaded before your custom JS — otherwise new Swiper(...) will give an error because Swiper won’t be defined yet.-->
 </body>
 </html>
