@@ -163,12 +163,12 @@
                     <h1>Vision</h1>
                 </div>
                 <div class="image">
-                    <img src="../images/black image.jpeg" alt="">
+                    <img src="../images/chicken_coop.jpg" alt="Chicken in a coop">
                 </div>
             </div>
             <div class="lower">
                 <div class="image">
-                    <img src="../images/black image.jpeg" alt="">
+                    <img src="../images/egss_in_grass.jpg" alt="Eggs">
                 </div>
                 <div class="text"> 
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -203,26 +203,27 @@
              <div class="info">
                 <div class="left">
                  <div>
-                    <img src="../images/phone_icon.png" alt="phone icon">
+                    <img src="../images/phone_icon_no_fill.png" alt="phone icon">
                     <h2>Phone Number</h2>
                     <p>+254729183672</p>
                  </div>
-                 <div>
-                    <img src="../images/home_icon.png" alt="home icon">
+                 <div class="bottom">
+                    <img src="../images/home_icon_no_fill.png" alt="home icon">
                     <h2>Address</h2>
                     <p>Kakamega</p>
                  </div>
                 </div>
                 <div class="right">
                  <div>
-                    <img src="../images/email_icon.png" alt="email icon">
+                    <img src="../images/email_icon_no_fill.png" alt="email icon">
                     <h2>Email</h2>
                     <p>mukabwasfarm@gmail.com</p>
                  </div>
-                 <div>
-                    <img src="../images/form_icon.png" alt="form icon">
+                 <div class="bottom">
+                    <img src="../images/form_icon_no_fill.png" alt="form icon">
                     <h2>Form</h2>
-                    <a href="#">Click Me</a>
+                    <br>
+                    <a href="#">Open form</a>
                  </div>
                 </div>
              </div>
@@ -230,7 +231,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; Mukabwa's farm</p>
+        <p>&copy; 2025 Mukabwa's farm - All rights reserved</p>
     </footer>
     <script src="../JavaScript/Swiper/swiper-bundle.min.js"></script>
     <script src="../JavaScript/swiper.js"></script>

@@ -1,13 +1,8 @@
 :root{
     font-size: 62.5%;
-    --gold:#D99201;
-    --junglegreen:#1A3F22;
-    --papayaorange:#E07A2F;
-    --jungle2:#1B6A59;
-    --dust1:#c7c1bd;
-    --green2:#828059;
-    --basecolor:#444B3C;
-    --supportcolor:#533024;
+    --basecolor:#0F1E0F;
+    --supportcolor:#AB7843;
+    --support2:#ffffff;
 }
 
 a{
@@ -15,7 +10,7 @@ a{
 }
 
 a:hover{
-    color: var(--gold);
+    color: var(--supportcolor);
 }
 
 body{
@@ -68,10 +63,10 @@ header .pages ul{
 
 /* FOOTER */
 footer{
-    background-color: var(--basecolor);
+    background-color: var(--supportcolor);
     height:4rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: var(--basecolor);
 }

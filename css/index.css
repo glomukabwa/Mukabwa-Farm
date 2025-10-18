@@ -1,13 +1,8 @@
 :root{
     font-size: 62.5%;
-    --gold:#D99201;
-    --junglegreen:#1A3F22;
     /*test 1*/
-    --dust1:#c7c1bd;
-    --green2:#828059;
     --basecolor:#0F1E0F;
     --supportcolor:#AB7843;
-    /*--support2:#FCFFF5;*/
     --support2:#ffffff;
 }
 
@@ -295,7 +290,7 @@ I am content with the default arrows rn so I won't put my own icons but I wanted
 }
 
 .swiper-pagination-bullet-active{
-    background-color:var(--gold);/*bullet, different from the navigation arrows are formed using background-color, border-radius etc so
+    background-color:var(--support2);/*bullet, different from the navigation arrows are formed using background-color, border-radius etc so
     that's why we target background-color to change them and not color like we used in navigation arrows*/
     transform:scale(1.3);/*This makes it zoom in by 30%. If you wanted to makes sth zoom out, u'd do eg scale(0.7) and it would decrease
     by 30%. So the original size is 1 and u are either adding or subtracting 0.sth*/
@@ -344,15 +339,21 @@ I am content with the default arrows rn so I won't put my own icons but I wanted
     padding-left:11rem;
 }
 
+.vision img{
+    object-fit: cover;
+}
+
 .vision .lower .image img{
     width:100%;
     height: 100%; /*100% of the 50% height it's been given*/
     padding-right:20px;
+    border-left: solid 0.4rem var(--supportcolor);
 }
 
 .vision .upper .image img{
     width:100%;
     height:100%;
+    border-left: solid 0.4rem var(--supportcolor);
 }
 
 .vision .lower .text, .vision .upper .image{
@@ -366,6 +367,10 @@ I am content with the default arrows rn so I won't put my own icons but I wanted
 
 .vision .lower .text p{
     font-size: 2rem;
+    border-left: solid 0.4rem var(--supportcolor);
+    padding-left: 1rem;
+    padding-top:1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 /* TESTIMONIALS */
@@ -435,7 +440,7 @@ If you want to select the children with no spacing u'll do this:
 .contacts .content{
     background-color: var(--supportcolor);
     width:fit-content;
-    padding: 3rem 2rem;
+    padding: 4rem 2rem;
 }
 
 .contacts h1{
@@ -465,4 +470,30 @@ If you want to select the children with no spacing u'll do this:
     display: flex;
     flex-direction: column;
     gap:4rem;
+}
+
+.contacts a{
+    border: solid 0.2rem var(--support2);
+    padding: 0.5rem 3rem;
+    box-sizing: border-box; /* ensures border doesn’t change layout */
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.contacts a::after{
+    content:"⟶";
+    position:relative;
+    left:1rem;
+    transition: all 0.3s ease;
+}
+
+.contacts a:hover{
+    color: var(--supportcolor);
+    background-color: var(--support2);
+    border-color: var(--support2);
+}
+
+.contacts a:hover::after{
+    color:var(--supportcolor);
+    left:2rem;
 }
