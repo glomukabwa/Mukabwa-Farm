@@ -69,33 +69,7 @@
                         <!--So plz follow the structure: swiper name, wrapper, slide, content-->
                         <div class="swiper-content">
                             <div class="image">
-                                <img src="../images/black image.jpeg" alt="">
-                            </div>
-                            <div class="about">
-                                <h2>Milk</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                <button>READ MORE</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="swiper-content">
-                            <div class="image">
-                                <img src="../images/black image.jpeg" alt="">
-                            </div>
-                            <div class="about">
-                                <h2>Beef</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                <button>READ MORE</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="swiper-content">
-                            <div class="image">
-                                <img src="../images/black image.jpeg" alt="">
+                                <img src="../images/chicken.jpg" alt="Chicken">
                             </div>
                             <div class="about">
                                 <h2>Chicken</h2>
@@ -108,7 +82,33 @@
                     <div class="swiper-slide">
                         <div class="swiper-content">
                             <div class="image">
-                                <img src="../images/black image.jpeg" alt="">
+                                <img src="../images/bull.jpeg" alt="Bull">
+                            </div>
+                            <div class="about">
+                                <h2>Bulls</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <button>READ MORE</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper-content">
+                            <div class="image">
+                                <img src="../images/dairy.jpg" alt="Dairy">
+                            </div>
+                            <div class="about">
+                                <h2>Dairy</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <button>READ MORE</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper-content">
+                            <div class="image">
+                                <img src="../images/eggs.jpg" alt="Eggs">
                             </div>
                             <div class="about">
                                 <h2>Eggs</h2>
@@ -121,7 +121,7 @@
                     <div class="swiper-slide">
                         <div class="swiper-content">
                             <div class="image">
-                                <img src="../images/black image.jpeg" alt="">
+                                <img src="../images/Pigs.jpeg" alt="Pigs">
                             </div>
                             <div class="about">
                                 <h2>Pigs</h2>
@@ -134,7 +134,7 @@
                     <div class="swiper-slide">
                         <div class="swiper-content">
                             <div class="image">
-                                <img src="../images/black image.jpeg" alt="">
+                                <img src="../images/maize_harvested.jpg" alt="Maize">
                             </div>
                             <div class="about">
                                 <h2>Maize</h2>

@@ -17,7 +17,7 @@ a{
 }
 
 a:hover{
-    color: var(--gold);
+    color: var(--supportcolor);
 }
 
 button{
@@ -48,13 +48,14 @@ button::after{
 }
 
 button:hover{
-    color: var(--gold);
-    border-color: var(--gold);
+    color: var(--support2);
+    background-color: var(--supportcolor);
+    border-color: var(--supportcolor);
 }
 
 button:hover::after{
-    color:var(--gold);
-    left:1.5rem;/*The hover has to have more pixels in the left than how it was initially(1rem). Plz note that 1.5rem is relative to its default page flow not its initial position so if u make it 1 rem like its initial position, there will be no movement*/
+    color:var(--support2);
+    left:2rem;/*The hover has to have more pixels in the left than how it was initially(1rem). Plz note that 1.5rem is relative to its default page flow not its initial position so if u make it 1 rem like its initial position, there will be no movement*/
     /*margin-left: 1.5rem;*/
 }
 
@@ -187,6 +188,7 @@ body{
     /*align-self: flex-end -> for column moves it to the right while for row, moves it to the bottom
     If I hadn't specified that the flex-direction is column then instead I wouldv'e used margin-left:auto
     justify-self: flex-end doesn't work on flex items so if u try to use it, nothing will happen*/
+    object-fit: cover;
 }
 
 .products .swiper-content .about{
@@ -209,6 +211,16 @@ body{
 .products .swiper-content .about button{
   align-self: flex-end; 
   border-color: var(--support2); 
+}
+
+.products .swiper-content .about button:hover{
+    border-color:var(--support2);
+    background-color: white;
+    color:var(--supportcolor);
+}
+
+.products .swiper-content .about button:hover::after{
+    color: var(--supportcolor);
 }
 
 /*This part isn't necessary. I'm just using it to learn positioning. If the container has the right height which gives all the elements enough space, like the height I'm using(comment all this out and u'll see that we don't need to add or remove any space btwn image and dots), u don't need this.*/
