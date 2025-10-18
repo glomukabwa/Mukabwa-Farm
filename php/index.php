@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
-    <div class="landingpage">
+    <div class="landingpage" id="top"><!--This id is for the "back to top" button-->
     <header>
         <div class="logo">
             <img src="../images/black image.jpeg" alt="">
@@ -197,37 +197,58 @@
             </div>
         </section>-->
 
-        <section class="contacts">
-            <div class="content">
-                <h1>Get In Touch</h1>
-             <div class="info">
-                <div class="left">
-                 <div>
-                    <img src="../images/phone_icon_no_fill.png" alt="phone icon">
-                    <h2>Phone Number</h2>
-                    <p>+254729183672</p>
-                 </div>
-                 <div class="bottom">
-                    <img src="../images/home_icon_no_fill.png" alt="home icon">
-                    <h2>Address</h2>
-                    <p>Kakamega</p>
-                 </div>
-                </div>
-                <div class="right">
-                 <div>
-                    <img src="../images/email_icon_no_fill.png" alt="email icon">
-                    <h2>Email</h2>
-                    <p>mukabwasfarm@gmail.com</p>
-                 </div>
-                 <div class="bottom">
-                    <img src="../images/form_icon_no_fill.png" alt="form icon">
-                    <h2>Form</h2>
-                    <br>
-                    <a href="#">Open form</a>
-                 </div>
-                </div>
-             </div>
-            </div>
+        <section class="beforefooter">
+            <ul>
+                <li class="logo">
+                    <img src="../images/black image.jpeg" alt="">
+                    <h1>MUKABWA'S FARM</h1>
+                </li>
+                <li class="pages">
+                    <h1>Company</h1>
+                    <div><a href="#">About Us</a></div>
+                    <div><a href="#">Products</a></div>
+                    <div><a href="#">Testimonials</a></div>
+                    <div><a href="#">Log In</a></div>
+                    <div><a href="#">Sign Up</a></div>
+                </li>
+                <li>
+                    <div class="content">
+                        <h1>Get In Touch</h1>
+                        <div class="info">
+                            <div class="contacts">
+                                <img src="../images/phone_icon_no_fill.png" alt="phone icon">
+                                <div>
+                                    <h2>Phone Number</h2>
+                                    <p>+254729183672</p>
+                                </div>
+                            </div>
+                            <div class="contacts">
+                                <img src="../images/home_icon_no_fill.png" alt="home icon">
+                                <div>
+                                    <h2>Address</h2>
+                                    <p>Kakamega</p>
+                                </div>
+                            </div>
+                            <div class="contacts">
+                                <img src="../images/email_icon_no_fill.png" alt="home icon">
+                                <div>
+                                   <h2>Email</h2>
+                                   <p>mukabwasfarm@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="contacts">
+                                <img src="../images/form_icon_no_fill.png" alt="form icon">
+                                <div>
+                                    <h2>Form</h2>
+                                    <br>
+                                    <a href="#">Open form</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="backhome"><a href="#top">BACK TO TOP</a></div>
         </section>
     </main>
     <footer>

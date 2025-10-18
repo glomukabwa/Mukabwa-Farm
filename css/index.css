@@ -427,52 +427,102 @@ If you want to select the children with no spacing u'll do this:
 }*/
 
 /* CONTACTS */
-.contacts{
-    border-top: solid 0.2rem var(--support2);
-    height: calc(100vh - 4rem);
-    display:flex;
-    /*To make the content appear at the middle of the page*/
-    align-items: center;
-    justify-content: center;
-    /*End*/
-}
-
-.contacts .content{
+.beforefooter{
+    height: calc(100vh - 4rem - 7rem);
     background-color: var(--supportcolor);
-    width:fit-content;
-    padding: 4rem 2rem;
 }
 
-.contacts h1{
-    font-size: 7rem;
-    text-align: center;
+.beforefooter img{
+    height: 2rem;
+    width: 2rem;
+}
+
+.beforefooter ul{
+    display:flex;
+}
+
+.beforefooter ul li{
+    width:33.3%;
+}
+
+.beforefooter .logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.beforefooter .logo img{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+}
+
+.beforefooter .logo h1{
+    font-size: 4rem;
+}
+
+.beforefooter .pages{
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+}
+
+.beforefooter .pages h1{
+    font-size: 4rem;
     border-bottom: solid 0.2rem var(--support2);
     padding-bottom: 1rem;
 }
 
-.contacts img{
-    height: 4rem;
-    width: 4rem;
+.beforefooter .pages a{
+    transition: all 0.3s ease;
 }
 
-.contacts .info{
-    display: flex;
-    width:50rem;
-    gap:5rem;
-    justify-self: center;
-    text-align: center;
-    padding-top: 2rem;
+.beforefooter .pages a:hover{
+    color:var(--support2);
 }
 
-.contacts .info .right, .contacts .info .left{
-    /*background-color: aliceblue;*/
-    width:25rem;
+.beforefooter .pages a::after{
+    content:"⟶";
+    position: relative;
+    left:1rem;
+    color:transparent;
+    transition: all 0.3s ease;
+}
+
+.beforefooter .pages a:hover::after{
+    color:var(--support2);
+    left:1.5rem;
+}
+
+.beforefooter .content{
     display: flex;
     flex-direction: column;
-    gap:4rem;
+    gap:1.5rem;
 }
 
-.contacts a{
+.beforefooter .content h1{
+    font-size: 4rem;
+    border-bottom: solid 0.2rem var(--support2);
+    padding-bottom: 1rem;
+}
+
+.beforefooter .content .info{
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+}
+
+.beforefooter .contacts{
+    display: flex;
+    gap:2rem;
+    align-items: center;
+}
+
+.beforefooter .contacts p{
+    padding-top: 0.5rem;
+}
+
+.beforefooter .contacts a{
     border: solid 0.2rem var(--support2);
     padding: 0.5rem 3rem;
     box-sizing: border-box; /* ensures border doesn’t change layout */
@@ -480,20 +530,53 @@ If you want to select the children with no spacing u'll do this:
     transition: all 0.3s ease;
 }
 
-.contacts a::after{
+.beforefooter .contacts a::after{
     content:"⟶";
     position:relative;
     left:1rem;
     transition: all 0.3s ease;
 }
 
-.contacts a:hover{
+.beforefooter .contacts a:hover{
     color: var(--supportcolor);
     background-color: var(--support2);
     border-color: var(--support2);
 }
 
-.contacts a:hover::after{
+.beforefooter .contacts a:hover::after{
     color:var(--supportcolor);
     left:2rem;
+}
+
+.beforefooter .backhome{
+    justify-self: center;
+    margin-top: 6rem;
+}
+
+.beforefooter .backhome a{
+    border: solid 0.2rem var(--support2);
+    padding: 0.7rem 3rem;
+    box-sizing: border-box; /* ensures border doesn’t change layout */
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.beforefooter .backhome a:hover{
+    color:var(--supportcolor);
+    background-color: var(--support2);
+    background-color: var(--support2);
+}
+
+.beforefooter .backhome a::after{
+    content:"↑";
+    position: relative;
+    left:1rem;
+    bottom:0.25rem;
+    transition: all 0.3s ease;
+    color: var(--basecolor);
+}
+
+.beforefooter .backhome a:hover::after{
+    color:var(--supportcolor);
+    bottom:0.5rem;
 }
