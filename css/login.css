@@ -1,0 +1,111 @@
+:root{
+    font-size: 62.5%;
+    --basecolor:#0F1E0F;
+    --supportcolor:#AB7843;
+    --support2:#ffffff;
+}
+
+a{
+    cursor:pointer;
+    transition: all 0.3s ease;
+}
+
+a:hover{
+    color: var(--supportcolor);
+}
+
+button{
+    cursor:pointer;
+    width:fit-content;
+    border: solid 0.2rem var(--supportcolor);
+    padding: 0.5rem 3rem;
+    box-sizing: border-box; 
+    background-color: transparent;
+    transition: all 0.3s ease; 
+}
+
+button::after{
+    content: "⟶";
+    color: var(--basecolor);
+    position:relative;
+    left:1rem;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    color: var(--support2);
+    background-color: var(--supportcolor);
+    border-color: var(--supportcolor);
+}
+
+button:hover::after{
+    color:var(--support2);
+    left:2rem;
+}
+
+body{
+    font-size: 1.6rem;
+    color:var(--basecolor);
+    background-color: var(--supportcolor);
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    height:40rem;
+    width:80rem;
+    background-color: var(--support2);
+    display: flex;
+}
+
+.content img{
+    width:40rem;
+    object-fit: cover;
+}
+
+.content form{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    padding: 2rem 3rem;
+}
+
+.content form h1{
+    font-size: 5rem;
+    text-align: center;
+}
+
+.content form label{
+    display: inline-block;/*This allows it to be given properties like width which are for block elements but since it's still inline, it won't move the input to the next line like a typical block element*/
+    width:11rem;
+}
+
+.content form input{
+    border: solid 0.2rem var(--supportcolor);
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.content form .nav{
+    margin: 0 auto;
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.content form button{
+    align-self: center;
+}
+
+.content form p{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.content form p a{
+    text-decoration: underline;
+    color: var(--supportcolor);
+}

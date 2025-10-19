@@ -26,8 +26,8 @@
                 <li><a>PRODUCTS</a></li>
                 <li><a>TESTIMONIALS</a></li>
                 <li><a>CONTACTS</a></li>
-                <li><a>LOG IN</a></li>
-                <li><a>SIGN UP</a></li>
+                <li><a href="http://localhost/Mukabwa's%20Farm/php/login.php">LOG IN</a></li>
+                <li><a href="http://localhost/Mukabwa's%20Farm/php/signup.php">SIGN UP</a></li>
             </ul>
         </div>
     </header>
@@ -208,8 +208,8 @@
                     <div><a href="#">About Us</a></div>
                     <div><a href="#">Products</a></div>
                     <div><a href="#">Testimonials</a></div>
-                    <div><a href="#">Log In</a></div>
-                    <div><a href="#">Sign Up</a></div>
+                    <div><a href="http://localhost/Mukabwa's%20Farm/php/login.php">Log In</a></div>
+                    <div><a href="http://localhost/Mukabwa's%20Farm/php/signup.php">Sign Up</a></div>
                 </li>
                 <li>
                     <div class="content">
