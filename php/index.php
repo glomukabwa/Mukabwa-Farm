@@ -21,8 +21,8 @@
         </div>
         <div class="pages">
             <ul>
-                <li><a>HOME</a></li>
-                <li><a>ABOUT US</a></li>
+                <li><a href="http://localhost/Mukabwa's%20Farm/php/index.php">HOME</a></li>
+                <li><a href="http://localhost/Mukabwa's%20Farm/php/aboutus.php">ABOUT US</a></li>
                 <li><a>PRODUCTS</a></li>
                 <li><a>TESTIMONIALS</a></li>
                 <li><a>CONTACTS</a></li>
@@ -218,7 +218,7 @@
                 </li>
                 <li class="pages">
                     <h1>Company</h1>
-                    <div><a href="#">About Us</a></div>
+                    <div><a href="http://localhost/Mukabwa's%20Farm/php/aboutus.php">About Us</a></div>
                     <div><a href="#">Products</a></div>
                     <div><a href="#">Testimonials</a></div>
                     <div><a href="http://localhost/Mukabwa's%20Farm/php/login.php">Log In</a></div>

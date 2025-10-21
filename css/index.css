@@ -6,58 +6,6 @@
     --support2:#ffffff;
 }
 
-a{
-    cursor:pointer;
-    transition: all 0.3s ease;
-}
-
-a:hover{
-    color: var(--supportcolor);
-}
-
-button{
-    cursor:pointer;
-    width:fit-content;
-    border: solid 0.2rem var(--supportcolor);
-    padding: 0.5rem 3rem;
-    box-sizing: border-box; /* ensures border doesn’t change layout */
-    background-color: transparent;
-    transition: all 0.3s ease; /* makes the hover effect animate smoothly instead of changing instantly 
-    ease → starts slow, speeds up, then slows down at the end (natural feel)
-    linear → constant speed throughout
-    ease-in → starts slow, then speeds up
-    ease-out → starts fast, ends slow
-    ease-in-out → starts and ends slow, speeds up in the middle*/
-}
-
-button::after{
-    /*This ia a pseudo element. It will add what u will specify after every button. U'll see that there are other pseudoelements like before,
-    It helps that you don't have to add things in html, you can use pseudo elements to add them. Chat describes pseaudo elements as sth that allows u to add virtual content to actual content in html. I think it says virtual cz this element doesn't exist in html, it is added here
-    one colon(:) is for pseudo classes and two colons (::) is for pseudo elements*/
-    content: "⟶";/*we can't use &rArro like we did in html here so we have to either get this from the internet or get its unicode like we did in java with emojis*/
-    color: var(--basecolor);/*color affects not only font but pseudo elemnts too*/
-    position:relative;/*I'm using this cz I want the arrow to move more to the right making it look animated when I hover. See y I didn't use margin below*/
-    left:1rem;
-    /*margin-left: 1rem;/*I've noticed that when I use margin, when I hover, it is the words of the button that move to the left and not the arrow itself*/
-    transition: all 0.3s ease;
-}
-
-button:hover{
-    color: var(--support2);
-    background-color: var(--supportcolor);
-    border-color: var(--supportcolor);
-}
-
-button:hover::after{
-    color:var(--support2);
-    left:2rem;/*The hover has to have more pixels in the left than how it was initially(1rem). Plz note that 1.5rem is relative to its default page flow not its initial position so if u make it 1 rem like its initial position, there will be no movement*/
-    /*margin-left: 1.5rem;*/
-}
-
-section{
-    padding:6rem 10rem;
-}
-
 body{
     background-color: var(--support2);
     color: var(--basecolor);

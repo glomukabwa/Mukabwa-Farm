@@ -1,0 +1,69 @@
+:root{
+    font-size: 62.5%;
+    --basecolor:#0F1E0F;
+    --supportcolor:#AB7843;
+    --support2:#ffffff;
+}
+
+header{
+    background-color: var(--supportcolor);
+}
+
+a:hover{
+    color: var(--support2);
+}
+
+.aboutus{
+    height:100vh;
+    width:100%;
+    padding: 0 0;
+}
+
+.aboutus h1{
+    font-size: 7rem;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.aboutus img{
+    height:50%;
+    width:100%;
+    object-fit:cover;
+}
+
+.aboutus div{
+    display:flex;
+    padding: 0 10rem;
+    gap:10rem;
+    text-align: justify;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.founder{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:3rem;
+}
+
+.founder h1{
+    font-size: 7rem;
+}
+
+.founder img{
+    border: solid 0.2rem var(--basecolor);
+    border-radius: 50%;
+    width: 20rem;
+    height: 20rem;
+}
+
+.founder p{
+    width:70%;
+    text-align: center;
+}
+
+.founder1{
+    background-color: var(--supportcolor);
+}
