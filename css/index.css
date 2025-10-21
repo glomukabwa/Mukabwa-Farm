@@ -87,8 +87,38 @@ body{
     padding: 1rem 0;
 }
 
-.about-us .text .button{
+.about-us .text .anchortag{
     align-self: flex-end; /*align-self only accepts: auto | flex-start | flex-end | center | baseline | stretch . So this will align to the right*/
+}
+
+.about-us .text a{
+    cursor:pointer;
+    width:fit-content;
+    border: solid 0.2rem var(--supportcolor);
+    padding: 0.5rem 3rem;
+    box-sizing: border-box;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    margin-top: auto;
+}
+
+.about-us .text a::after{
+    content: "⟶";
+    color: var(--basecolor);
+    position:relative;
+    left:1rem;
+    transition: all 0.3s ease;
+}
+
+.about-us .text a:hover{
+    color: var(--support2);
+    background-color: var(--supportcolor);
+    border-color: var(--supportcolor);
+}
+
+.about-us .text a:hover::after{
+    color:var(--support2);
+    left:2rem;
 }
 
 /* PRODUCTS */
@@ -152,19 +182,35 @@ body{
     padding: 2rem 0;
 }
 
-.products .swiper-content .about button{
-  align-self: flex-end; 
-  border-color: var(--support2); 
+.products .swiper-content .about a{
+    cursor:pointer;
+    width:fit-content;
+    border: solid 0.2rem var(--support2);
+    padding: 0.5rem 3rem;
+    box-sizing: border-box;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    align-self: flex-end;
+    margin-top: auto;
 }
 
-.products .swiper-content .about button:hover{
-    border-color:var(--support2);
-    background-color: white;
-    color:var(--supportcolor);
-}
-
-.products .swiper-content .about button:hover::after{
+.products .swiper-content .about a:hover{
     color: var(--supportcolor);
+    background-color: var(--support2);
+    border-color: var(--support2);
+}
+
+.products .swiper-content .about a::after{
+    content: "⟶";
+    color: var(--basecolor);
+    position:relative;
+    left:1rem;
+    transition: all 0.3s ease;
+}
+
+.products .swiper-content .about a:hover::after{
+    color:var(--supportcolor);
+    left:2rem;
 }
 
 /*This part isn't necessary. I'm just using it to learn positioning. If the container has the right height which gives all the elements enough space, like the height I'm using(comment all this out and u'll see that we don't need to add or remove any space btwn image and dots), u don't need this.*/

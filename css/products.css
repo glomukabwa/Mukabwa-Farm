@@ -1,0 +1,119 @@
+:root{
+    font-size: 62.5%;
+    --basecolor:#0F1E0F;
+    --supportcolor:#AB7843;
+    --support2:#ffffff;
+}
+
+header{
+    background-color: var(--supportcolor);
+}
+
+a:hover{
+    color: var(--support2);
+}
+
+section{
+    padding:0 0;
+}
+
+section h1{
+    font-size: 7rem;
+    text-align: center;
+    padding-top:1.1rem;
+}
+
+.prod{
+    height: 75vh;
+    width:100%;
+    display:flex;
+    padding: 4rem 10rem;
+}
+
+.prod .title{
+    width:35%;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.prod .title img{
+    width:27rem;
+    height: 27rem;
+    align-self: center;
+    object-fit: cover;
+}
+
+.prod .title h2{
+    font-size: 5rem;
+    text-align: center;
+}
+
+.prod .info{
+    width:65%;
+    height: 100%;
+    padding-left:3.5rem;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    border-left: solid 0.4rem var(--supportcolor);
+    padding-top:1rem;
+    padding-bottom: 1rem;
+}
+
+.prod .info button{
+    align-self: flex-end;
+    
+}
+
+.prod a{
+    cursor:pointer;
+    width:fit-content;
+    border: solid 0.2rem var(--supportcolor);
+    padding: 0.5rem 3rem;
+    box-sizing: border-box;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    align-self: flex-end;
+    margin-top: auto;
+}
+
+.prod a::after{
+    content: "⟶";
+    color: var(--basecolor);
+    position:relative;
+    left:1rem;
+    transition: all 0.3s ease;
+}
+
+.prod a:hover{
+    color: var(--support2);
+    background-color: var(--supportcolor);
+    border-color: var(--supportcolor);
+}
+
+.prod a:hover::after{
+    color:var(--support2);
+    left:2rem;
+}
+
+.sec, .fourth, .sixth{
+    background-color: var(--supportcolor);
+}
+
+.sec .info, .fourth .info, .sixth .info{
+    border-left: solid 0.4rem var(--support2);
+}
+
+.sec a, .fourth a, .sixth a{
+    border: solid 0.2rem var(--support2);
+}
+
+.sec a:hover, .fourth a:hover, .sixth a:hover{
+    background-color: var(--support2);
+    color: var(--supportcolor);
+}
+
+.sec a:hover::after, .fourth a:hover::after, .sixth a:hover::after{
+    color: var(--supportcolor);
+}

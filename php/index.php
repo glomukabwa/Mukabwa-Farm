@@ -23,7 +23,7 @@
             <ul>
                 <li><a href="http://localhost/Mukabwa's%20Farm/php/index.php">HOME</a></li>
                 <li><a href="http://localhost/Mukabwa's%20Farm/php/aboutus.php">ABOUT US</a></li>
-                <li><a>PRODUCTS</a></li>
+                <li><a href="http://localhost/Mukabwa's%20Farm/php/products.php">PRODUCTS</a></li>
                 <li><a>TESTIMONIALS</a></li>
                 <li><a>CONTACTS</a></li>
                 <li><a href="http://localhost/Mukabwa's%20Farm/php/login.php">LOG IN</a></li>
@@ -51,8 +51,8 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
                 </div>
-                <div class="button">
-                    <button>SEE MORE</button>
+                <div class="anchortag">
+                    <a href="http://localhost/Mukabwa's%20Farm/php/aboutus.php">SEE MORE</a>
                 </div>
             </div>
         </section>
@@ -74,7 +74,7 @@
                             <div class="about">
                                 <h2>Chicken</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                <button>READ MORE</button>
+                                <a href="http://localhost/Mukabwa's%20Farm/php/products.php#chicken">READ MORE</a>
                             </div>
                         </div>
                     </div>
@@ -87,7 +87,7 @@
                             <div class="about">
                                 <h2>Bulls</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                <button>READ MORE</button>
+                                <a href="http://localhost/Mukabwa's%20Farm/php/products.php#bull">READ MORE</a>
                             </div>
                         </div>
                     </div>
@@ -100,7 +100,7 @@
                             <div class="about">
                                 <h2>Dairy</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                <button>READ MORE</button>
+                                <a href="http://localhost/Mukabwa's%20Farm/php/products.php#dairy">READ MORE</a>
                             </div>
                         </div>
                     </div>
@@ -113,7 +113,7 @@
                             <div class="about">
                                 <h2>Eggs</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                <button>READ MORE</button>
+                                <a href="http://localhost/Mukabwa's%20Farm/php/products.php#eggs">READ MORE</a>
                             </div>
                         </div>
                     </div>
@@ -126,7 +126,7 @@
                             <div class="about">
                                 <h2>Pigs</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                <button>READ MORE</button>
+                                <a href="http://localhost/Mukabwa's%20Farm/php/products.php#pigs">READ MORE</a>
                             </div>
                         </div>
                     </div>
@@ -139,7 +139,7 @@
                             <div class="about">
                                 <h2>Maize</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                <button>READ MORE</button>
+                                <a href="http://localhost/Mukabwa's%20Farm/php/products.php#maize">READ MORE</a>
                             </div>
                         </div>
                     </div>
@@ -152,11 +152,10 @@
                             <div class="about">
                                 <h2>Kales</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                <button>READ MORE</button>
+                                <a href="http://localhost/Mukabwa's%20Farm/php/products.php#kales">READ MORE</a>
                             </div>
                         </div>
                     </div>
-
                 </div>
 
                 <!-- Navigation buttons -->
@@ -219,7 +218,7 @@
                 <li class="pages">
                     <h1>Company</h1>
                     <div><a href="http://localhost/Mukabwa's%20Farm/php/aboutus.php">About Us</a></div>
-                    <div><a href="#">Products</a></div>
+                    <div><a href="http://localhost/Mukabwa's%20Farm/php/products.php">Products</a></div>
                     <div><a href="#">Testimonials</a></div>
                     <div><a href="http://localhost/Mukabwa's%20Farm/php/login.php">Log In</a></div>
                     <div><a href="http://localhost/Mukabwa's%20Farm/php/signup.php">Sign Up</a></div>
