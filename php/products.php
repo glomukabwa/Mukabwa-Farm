@@ -21,7 +21,7 @@
                 <li><a href="http://localhost/Mukabwa's%20Farm/php/aboutus.php">ABOUT US</a></li>
                 <li><a href="http://localhost/Mukabwa's%20Farm/php/products.php">PRODUCTS</a></li>
                 <li><a>TESTIMONIALS</a></li>
-                <li><a>CONTACTS</a></li>
+                <li><a href="http://localhost/Mukabwa's%20Farm/php/contacts.php">CONTACTS</a></li>
                 <li><a href="http://localhost/Mukabwa's%20Farm/php/login.php">LOG IN</a></li>
                 <li><a href="http://localhost/Mukabwa's%20Farm/php/signup.php">SIGN UP</a></li>
             </ul>
