@@ -35,11 +35,31 @@
     <!--Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.-->
         <section class="home">
             <div>
-                <h1>MUKABWA'S FARM</h1>
+                <h1>MUKABWA FARM</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
             </div>
         </section>
-</div>    
+</div>   
+
+        <section class="vision">
+            <div class="upper">
+                <div class="title">
+                    <h1>Our</h1>
+                    <h1>Vision</h1>
+                </div>
+                <div class="image">
+                    <img src="../images/chicken_coop.jpg" alt="Chicken in a coop">
+                </div>
+            </div>
+            <div class="lower">
+                <div class="image">
+                    <img src="../images/egss_in_grass.jpg" alt="Eggs">
+                </div>
+                <div class="text"> 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+        </section>
 
         <section class="about-us">
             <div class="image">
@@ -166,26 +186,6 @@
                 <div class="swiper-pagination"></div>
             </div>
 
-        </section>
-
-        <section class="vision">
-            <div class="upper">
-                <div class="title">
-                    <h1>Our</h1>
-                    <h1>Vision</h1>
-                </div>
-                <div class="image">
-                    <img src="../images/chicken_coop.jpg" alt="Chicken in a coop">
-                </div>
-            </div>
-            <div class="lower">
-                <div class="image">
-                    <img src="../images/egss_in_grass.jpg" alt="Eggs">
-                </div>
-                <div class="text"> 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-            </div>
         </section>
 
         <!--<section class="testimonials">
