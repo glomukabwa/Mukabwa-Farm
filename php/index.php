@@ -17,17 +17,17 @@
     <header>
         <div class="logo">
             <img src="../images/black image.jpeg" alt="">
-            <p>MUKABWA'S FARM</p>
+            <p>MUKABWA FARM</p>
         </div>
         <div class="pages">
             <ul>
-                <li><a href="http://localhost/Mukabwa's%20Farm/php/index.php">HOME</a></li>
-                <li><a href="http://localhost/Mukabwa's%20Farm/php/aboutus.php">ABOUT US</a></li>
-                <li><a href="http://localhost/Mukabwa's%20Farm/php/products.php">PRODUCTS</a></li>
+                <li><a href="http://localhost/Mukabwa%20Farm/php/index.php">HOME</a></li>
+                <li><a href="http://localhost/Mukabwa%20Farm/php/aboutus.php">ABOUT US</a></li>
+                <li><a href="http://localhost/Mukabwa%20Farm/php/products.php">PRODUCTS</a></li>
                 <li><a>TESTIMONIALS</a></li>
-                <li><a href="http://localhost/Mukabwa's%20Farm/php/contacts.php">CONTACTS</a></li>
-                <li><a href="http://localhost/Mukabwa's%20Farm/php/login.php">LOG IN</a></li>
-                <li><a href="http://localhost/Mukabwa's%20Farm/php/signup.php">SIGN UP</a></li>
+                <li><a href="http://localhost/Mukabwa%20Farm/php/contacts.php">CONTACTS</a></li>
+                <li><a href="http://localhost/Mukabwa%20Farm/php/login.php">LOG IN</a></li>
+                <li><a href="http://localhost/Mukabwa%20Farm/php/signup.php">SIGN UP</a></li>
             </ul>
         </div>
     </header>
@@ -36,7 +36,7 @@
         <section class="home">
             <div>
                 <h1>MUKABWA FARM</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                <p>Dealers is dairy, poultry, beef, vegetables, pork and cereals.</p>
             </div>
         </section>
 </div>   
@@ -56,7 +56,7 @@
                     <img src="../images/egss_in_grass.jpg" alt="Eggs">
                 </div>
                 <div class="text"> 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>To transform our village from dependency to <br>self-sufficiency by producing high-quality farm products that sustain livelihoods and empower the community.</p>
                 </div>
             </div>
         </section>
@@ -68,11 +68,11 @@
             <div class="text">
                 <h1 class="title">About Us</h1><!--h1 is not an inline elememt so u don't need to put it in a div to specify block element properties-->
                 <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                    <p>Nestled in the fertile lands of Kakamega County, our farm was founded with a simple yet powerful vision — to transform our village from dependency to self-sufficiency through sustainable agriculture. What began as a small dream has grown into a thriving farm that produces fresh eggs, chicken, milk, bulls, pigs, maize, and kales — all nurtured with care and dedication.</p>
+                    <p>Driven by the belief that our community is a sleeping giant, our founder took the first step to awaken its potential. Today, the farm not only delivers high-quality produce but also creates employment opportunities and inspires others to invest in the rich promise of our soil.</p>
                 </div>
                 <div class="anchortag">
-                    <a href="http://localhost/Mukabwa's%20Farm/php/aboutus.php">SEE MORE</a>
+                    <a href="http://localhost/Mukabwa%20Farm/php/aboutus.php">SEE MORE</a>
                 </div>
             </div>
         </section>

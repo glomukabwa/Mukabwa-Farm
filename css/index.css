@@ -38,7 +38,7 @@ body{
 }
 
 .home p{
-    font-size:2.5rem;
+    font-size:3rem;
     text-align: center;
     color: var(--support2);
 }
@@ -112,11 +112,12 @@ body{
 }
 
 .vision .lower .text p{
-    font-size: 2rem;
+    font-size: 2.5rem;
     border-left: solid 0.4rem var(--supportcolor);
-    padding-left: 1rem;
+    padding-left: 2rem;
     padding-top:1.5rem;
     padding-bottom: 1.5rem;
+    font-style: italic;
 }
 
 /* ABOUT US */
@@ -156,11 +157,11 @@ body{
 .about-us .text .content{
     border-top: solid 0.3rem var(--support2);
     border-bottom: solid 0.3rem var(--support2);
-    padding:1rem 0;
-}
-
-.about-us .text .content p{
-    padding: 1rem 0;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+    font-size: 1.7rem;
 }
 
 .about-us .text .anchortag{
