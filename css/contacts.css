@@ -3,6 +3,7 @@
     --basecolor:#0F1E0F;
     --supportcolor:#AB7843;
     --support2:#ffffff;
+    --lighterbrown:antiquewhite;
 }
 
 body{
@@ -23,7 +24,7 @@ h1{
 }
 
 form{
-    background-color: antiquewhite;
+    background-color: var(--lighterbrown);
     display: flex;
     flex-direction: column;
     gap:2rem;
