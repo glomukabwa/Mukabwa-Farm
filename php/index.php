@@ -56,7 +56,7 @@
                     <img src="../images/egss_in_grass.jpg" alt="Eggs">
                 </div>
                 <div class="text"> 
-                    <p>To transform our village from dependency to <br>self-sufficiency by producing high-quality farm products that sustain livelihoods and empower the community.</p>
+                    <p>To transform our village from dependency to <br>self-sufficiency by producing high-quality farm products that can sustain livelihoods and empower the community.</p>
                 </div>
             </div>
         </section>
@@ -132,7 +132,7 @@
                             </div>
                             <div class="about">
                                 <h2>Eggs</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>Egg consumption has been on the rise in our generation, unfortunately most of the eggs consumed in our county come from the neibouring country{ Uganda}. Mukabwa farm feels moved to dive into this opportunity and produce enough eggs to feed the market.</p>
                                 <a href="http://localhost/Mukabwa%20Farm/php/products.php#eggs">READ MORE</a>
                             </div>
                         </div>
