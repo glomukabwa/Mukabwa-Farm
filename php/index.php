@@ -89,11 +89,11 @@
                         <!--So plz follow the structure: swiper name, wrapper, slide, content-->
                         <div class="swiper-content">
                             <div class="image">
-                                <img src="../images/chicken.jpg" alt="Chicken">
+                                <img src="../images/broiler_1.jpg" alt="Chicken">
                             </div>
                             <div class="about">
-                                <h2>Chicken</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <h2>Broilers</h2>
+                                <p>Mukabwa Farm has ventured into poultry farming, including broilers, as a source of income for the farm. This move was motivated by the way people in this area hold parties and funerals, as well as the perception that serving chicken is the highest way of honoring a guest. Unfortunately, most families keep poultry for local consumption, but Mukabwa Farm chose to commercialize it.</p>
                                 <a href="http://localhost/Mukabwa%20Farm/php/products.php#chicken">READ MORE</a>
                             </div>
                         </div>
@@ -105,8 +105,8 @@
                                 <img src="../images/bull.jpeg" alt="Bull">
                             </div>
                             <div class="about">
-                                <h2>Bulls</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <h2>Beef</h2>
+                                <p>Beef consumption is on the rise in the Western Province because of its metropolitan nature. Also the bull fighting culture has highly escalated the demand for bulls in the area. Mukabwa farm is up to task to give you all that you’ll need in one place. We fatten the bulls for both meat and for the bull fighting culture. Funny enough, a well fed bull can go up to 3000 USD based on its kgs.</p>
                                 <a href="http://localhost/Mukabwa%20Farm/php/products.php#bull">READ MORE</a>
                             </div>
                         </div>
@@ -118,8 +118,8 @@
                                 <img src="../images/dairy.jpg" alt="Dairy">
                             </div>
                             <div class="about">
-                                <h2>Dairy</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <h2>Milk</h2>
+                                <p>In Western Kenya, milk is referred to as white gold. This is due to its demand by all ages. It has never been possible to satisfy the market with milk. The market ranges from the indigenes, the schools, hospitals and the colleges surrounding the community. Mukabwa farm has seen this as an open door to its dream of production and heavily invested into dairy cows that are currently producing 200 litres per day which is still not a match to the demand present.</p>
                                 <a href="http://localhost/Mukabwa%20Farm/php/products.php#dairy">READ MORE</a>
                             </div>
                         </div>
@@ -145,21 +145,8 @@
                             </div>
                             <div class="about">
                                 <h2>Pigs</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>As people advance in knowledge they tend to shift their eating habits. Many are moving from red meat to white meat due to its lower saturated fat content and perceived health benefits. Our farm has recognized this trend and quickly adapted by producing pigs for pork. The market response has been strong, with demand for pork exceeding supply, resulting in a shortage.</p>
                                 <a href="http://localhost/Mukabwa%20Farm/php/products.php#pigs">READ MORE</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="swiper-content">
-                            <div class="image">
-                                <img src="../images/maize_harvested.jpg" alt="Maize">
-                            </div>
-                            <div class="about">
-                                <h2>Maize</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                <a href="http://localhost/Mukabwa%20Farm/php/products.php#maize">READ MORE</a>
                             </div>
                         </div>
                     </div>
@@ -171,6 +158,19 @@
                             </div>
                             <div class="about">
                                 <h2>Kales</h2>
+                                <p>Nutritionists have consistently advised people to consume more green vegetables for better health. Fortunately, Kakamega County and a large number of Kenyans prefer kales as a primary source of greens. Taking advantage of the frequent rainfall and fertile loam soils, Mukabwa Farm has identified this as a valuable opportunity and has begun planting more kales for sale, as market demand continues to exceed supply.</p>
+                                <a href="http://localhost/Mukabwa%20Farm/php/products.php#maize">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper-content">
+                            <div class="image">
+                                <img src="../images/maize_harvested.jpg" alt="Maize">
+                            </div>
+                            <div class="about">
+                                <h2>Maize</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                 <a href="http://localhost/Mukabwa%20Farm/php/products.php#kales">READ MORE</a>
                             </div>
