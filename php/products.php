@@ -28,7 +28,7 @@
         </div>
     </header>
     <main>
-        <section class="products">
+        <!--<section class="products">
             <h1>Our Products</h1>
             <div class="prod first" id="chicken">
                 <div class="title">
@@ -114,7 +114,7 @@
                     <a href="http://localhost/Mukabwa%20Farm/php/contacts.php">MAKE INQUIRY</a>
                 </div>
             </div>
-        </section>
+        </section>-->
 
         <section class="future" id="futureplans">
             <h1>Future Plans</h1>
