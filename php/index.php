@@ -23,8 +23,8 @@
             <ul>
                 <li><a href="http://localhost/Mukabwa%20Farm/php/index.php">HOME</a></li>
                 <li><a href="http://localhost/Mukabwa%20Farm/php/aboutus.php">ABOUT US</a></li>
-                <li><a href="http://localhost/Mukabwa%20Farm/php/products.php">PRODUCTS</a></li>
-                <li><a>TESTIMONIALS</a></li>
+                <li><a href="http://localhost/Mukabwa%20Farm/php/products.php">FUTURE</a></li>
+                <!--<li><a>TESTIMONIALS</a></li>-->
                 <li><a href="http://localhost/Mukabwa%20Farm/php/contacts.php">CONTACTS</a></li>
                 <li><a href="http://localhost/Mukabwa%20Farm/php/login.php">LOG IN</a></li>
                 <li><a href="http://localhost/Mukabwa%20Farm/php/signup.php">SIGN UP</a></li>
@@ -218,8 +218,8 @@
                 <li class="pages">
                     <h1>Company</h1>
                     <div><a href="http://localhost/Mukabwa%20Farm/php/aboutus.php">About Us</a></div>
-                    <div><a href="http://localhost/Mukabwa%20Farm/php/products.php">Products</a></div>
-                    <div><a href="#">Testimonials</a></div>
+                    <div><a href="http://localhost/Mukabwa%20Farm/php/products.php">Future</a></div>
+                    <!--<div><a href="#">Testimonials</a></div>-->
                     <div><a href="http://localhost/Mukabwa%20Farm/php/login.php">Log In</a></div>
                     <div><a href="http://localhost/Mukabwa%20Farm/php/signup.php">Sign Up</a></div>
                 </li>
