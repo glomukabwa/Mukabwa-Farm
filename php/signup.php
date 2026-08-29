@@ -23,12 +23,12 @@
             <div>
                 <label for="password">Enter password: </label>
                 <input type="password" id="password" name="password" autocomplete="new-password"><!--Sometimes the browser might ignore off so we use new-password into tricking it that a user has to enter a new password so it has to be empty-->
-<!--I've noticed that just autocomplete="new-password" will clear both fields but autocomplete="off" doesn't reflect anything if u haven't put autocomplete="new-password" but for consistency I'm keeping both. 
+<!--I've noticed that just autocomplete="new-password" in password will clear both fields but autocomplete="off" in email doesn't reflect anything if u haven't also put autocomplete="new-password" in password but for consistency I'm keeping both. 
 Also, autocomplete="off" in the <form> brackets is supposed to clear every field and ensure they are all empty but it isn't working. I've tried to also just put autocomplete="new-password" in form and it is also not working just do what I've done rn-->
             </div>
             <div class="nav">
                 <button type="submit">Sign Up</button>
-                <p>Have an account? <a href="http://localhost/Mukabwa's%20Farm/php/login.php">Log In</a></p>
+                <p>Have an account? <a href="http://localhost/MukabwaFarm/php/login.php">Log In</a></p>
             </div>
         </form>
     </div>

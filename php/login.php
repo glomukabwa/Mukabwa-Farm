@@ -26,7 +26,7 @@
             </div>
             <div class="nav">
                 <button type="submit">Log In</button>
-                <p>Don't have an account? <a href="http://localhost/Mukabwa's%20Farm/php/signup.php">Sign Up</a></p>
+                <p>Don't have an account? <a href="http://localhost/MukabwaFarm/php/signup.php">Sign Up</a></p>
             </div>
         </form>
     </div>

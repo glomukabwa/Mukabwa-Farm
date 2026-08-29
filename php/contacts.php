@@ -17,13 +17,13 @@
         </div>
         <div class="pages">
             <ul>
-                <li><a href="http://localhost/Mukabwa%20Farm/php/index.php">HOME</a></li>
-                <li><a href="http://localhost/Mukabwa%20Farm/php/aboutus.php">ABOUT US</a></li>
-                <li><a href="http://localhost/Mukabwa%20Farm/php/products.php">FUTURE</a></li>
+                <li><a href="http://localhost/MukabwaFarm/php/index.php">HOME</a></li>
+                <li><a href="http://localhost/MukabwaFarm/php/aboutus.php">ABOUT US</a></li>
+                <li><a href="http://localhost/MukabwaFarm/php/products.php">FUTURE</a></li>
                 <!--<li><a>TESTIMONIALS</a></li>-->
-                <li><a href="http://localhost/Mukabwa%20Farm/php/contacts.php">CONTACTS</a></li>
-                <li><a href="http://localhost/Mukabwa%20Farm/php/login.php">LOG IN</a></li>
-                <li><a href="http://localhost/Mukabwa%20Farm/php/signup.php">SIGN UP</a></li>
+                <li><a href="http://localhost/MukabwaFarm/php/contacts.php">CONTACTS</a></li>
+                <li><a href="http://localhost/MukabwaFarm/php/login.php">LOG IN</a></li>
+                <li><a href="http://localhost/MukabwaFarm/php/signup.php">SIGN UP</a></li>
             </ul>
         </div>
     </header>
@@ -77,7 +77,7 @@
                         <img src="../images/email_icon_no_fill.png" alt="home icon">
                         <div>
                             <h2>Email</h2>
-                            <p>mukabwasfarm@gmail.com</p>
+                            <p>mukabwafarm7@gmail.com</p>
                         </div>
                     </div>
                 </div>
@@ -85,7 +85,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 Mukabwa farm - All rights reserved</p>
+        <p>&copy; 2026 Mukabwa farm - All rights reserved</p>
     </footer>
 </body>
 </html>

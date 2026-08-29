@@ -17,13 +17,13 @@
         </div>
         <div class="pages">
             <ul>
-                <li><a href="http://localhost/Mukabwa%20Farm/php/index.php">HOME</a></li>
-                <li><a href="http://localhost/Mukabwa%20Farm/php/aboutus.php">ABOUT US</a></li>
-                <li><a href="http://localhost/Mukabwa%20Farm/php/products.php">FUTURE</a></li>
+                <li><a href="http://localhost/MukabwaFarm/php/index.php">HOME</a></li>
+                <li><a href="http://localhost/MukabwaFarm/php/aboutus.php">ABOUT US</a></li>
+                <li><a href="http://localhost/MukabwaFarm/php/products.php">FUTURE</a></li>
                 <!--<li><a>TESTIMONIALS</a></li>-->
-                <li><a href="http://localhost/Mukabwa%20Farm/php/contacts.php">CONTACTS</a></li>
-                <li><a href="http://localhost/Mukabwa%20Farm/php/login.php">LOG IN</a></li>
-                <li><a href="http://localhost/Mukabwa%20Farm/php/signup.php">SIGN UP</a></li>
+                <li><a href="http://localhost/MukabwaFarm/php/contacts.php">CONTACTS</a></li>
+                <li><a href="http://localhost/MukabwaFarm/php/login.php">LOG IN</a></li>
+                <li><a href="http://localhost/MukabwaFarm/php/signup.php">SIGN UP</a></li>
             </ul>
         </div>
     </header>
@@ -45,7 +45,7 @@
                         <p>Like every success story, the journey was not without challenges. In the early days, the farm faced limited capital, unskilled labor, and poor access to agricultural expertise due to its remote village location. Yet, with determination, resilience, and a deep belief in the power of community, the two founders turned every obstacle into a stepping stone toward growth.</p>
                         <p>The farm has become a source of employment and inspiration for villagers, encouraging them to embrace agriculture as a sustainable way of life. Today, the farm stands as a symbol of what can be achieved when passion meets purpose — proving that even the smallest step, taken with conviction, can spark lasting change.</p>
                         <p>We continue to look ahead with optimism, seeking partnerships and innovations that will take our vision further.</p>
-                        <a href="http://localhost/Mukabwa%20Farm/php/products.php#futureplans">Learn More About Our Future Plans</a>
+                        <a href="http://localhost/MukabwaFarm/php/products.php#futureplans">Learn More About Our Future Plans</a>
                     </div>
                 </div>
             </div>
@@ -71,7 +71,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 Mukabwa farm - All rights reserved</p>
+        <p>&copy; 2026 Mukabwa farm - All rights reserved</p>
     </footer>
     
 </body>

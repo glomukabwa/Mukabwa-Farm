@@ -17,13 +17,13 @@
         </div>
         <div class="pages">
             <ul>
-                <li><a href="http://localhost/Mukabwa%20Farm/php/index.php">HOME</a></li>
-                <li><a href="http://localhost/Mukabwa%20Farm/php/aboutus.php">ABOUT US</a></li>
-                <li><a href="http://localhost/Mukabwa%20Farm/php/products.php">FUTURE</a></li>
+                <li><a href="http://localhost/MukabwaFarm/php/index.php">HOME</a></li>
+                <li><a href="http://localhost/MukabwaFarm/php/aboutus.php">ABOUT US</a></li>
+                <li><a href="http://localhost/MukabwaFarm/php/products.php">FUTURE</a></li>
                 <!--<li><a>TESTIMONIALS</a></li>-->
-                <li><a href="http://localhost/Mukabwa%20Farm/php/contacts.php">CONTACTS</a></li>
-                <li><a href="http://localhost/Mukabwa%20Farm/php/login.php">LOG IN</a></li>
-                <li><a href="http://localhost/Mukabwa%20Farm/php/signup.php">SIGN UP</a></li>
+                <li><a href="http://localhost/MukabwaFarm/php/contacts.php">CONTACTS</a></li>
+                <li><a href="http://localhost/MukabwaFarm/php/login.php">LOG IN</a></li>
+                <li><a href="http://localhost/MukabwaFarm/php/signup.php">SIGN UP</a></li>
             </ul>
         </div>
     </header>
@@ -158,7 +158,7 @@
             <div class="content">
                 <h1>Patnership for Growth</h1>
                 <p>As we move forward, the farm welcomes partnerships from individuals, organizations, and investors who share our vision for sustainable agriculture and rural transformation. Together, we can expand opportunities, introduce new technologies, and make our community a model of self-sufficiency and agricultural excellence.</p>
-                <p class="two">Interested in patnering with us?  <a href="http://localhost/Mukabwa%20Farm/php/patnership.php">Get in Touch</a></p>
+                <p class="two">Interested in patnering with us?  <a href="http://localhost/MukabwaFarm/php/contacts.php">Get in Touch</a></p>
             </div>
             <img src="../images/shaking hands.jpg" alt="shaking hands">
         </section>
