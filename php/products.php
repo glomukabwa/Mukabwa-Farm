@@ -19,7 +19,7 @@
             <ul>
                 <li><a href="http://localhost/MukabwaFarm/php/index.php">HOME</a></li>
                 <li><a href="http://localhost/MukabwaFarm/php/aboutus.php">ABOUT US</a></li>
-                <li><a href="http://localhost/MukabwaFarm/php/products.php">FUTURE</a></li>
+                <li><a href="http://localhost/MukabwaFarm/php/products.php">PRODUCTS</a></li>
                 <!--<li><a>TESTIMONIALS</a></li>-->
                 <li><a href="http://localhost/MukabwaFarm/php/contacts.php">CONTACTS</a></li>
                 <li><a href="http://localhost/MukabwaFarm/php/login.php">LOG IN</a></li>

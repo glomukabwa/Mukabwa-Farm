@@ -1,3 +1,20 @@
+<?php
+session_start();
+include('config.php');
+
+if($_SERVER['REQUEST_METHOD'] === "POST"){
+    $fname = trim($_POST['fname'] ?: '');
+    $lname = trim($_POST['lname'] ?: '');
+    $email = trim($_POST['email'] ?: '');
+    $pnumber = trim($_POST['pnumber'] ?: '');
+    $comment = trim($_POST['comment'] ?: '');
+
+    $stmt = $conn->prepare("INSERT INTO contacts (first_name, last_name, email, phone_number, comments)
+                            VALUES (?, ?, ?, ?, ?)");
+    $stmt->bind_param("sssss", $fname, $lname, $email, $pnumber, $comment);
+    $stmt->execute();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +36,7 @@
             <ul>
                 <li><a href="http://localhost/MukabwaFarm/php/index.php">HOME</a></li>
                 <li><a href="http://localhost/MukabwaFarm/php/aboutus.php">ABOUT US</a></li>
-                <li><a href="http://localhost/MukabwaFarm/php/products.php">FUTURE</a></li>
+                <li><a href="http://localhost/MukabwaFarm/php/products.php">PRODUCTS</a></li>
                 <!--<li><a>TESTIMONIALS</a></li>-->
                 <li><a href="http://localhost/MukabwaFarm/php/contacts.php">CONTACTS</a></li>
                 <li><a href="http://localhost/MukabwaFarm/php/login.php">LOG IN</a></li>
@@ -28,25 +45,25 @@
         </div>
     </header>
     <main>
-        <form action="" method="">
+        <form method="POST">
             <h1>Contact Form</h1>
             <div>
                 <label for="fname">First name:</label>
-                <input type="text" id="fname" name="fname" autocomplete="off">
+                <input type="text" id="fname" name="fname" >
             </div>
             <div>
-                <label for="sname">Last name:</label>
-                <input type="text" id="sname" name="sname" autocomplete="off">
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" >
             </div>
             <div>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" autocomplete="off">
+                <input type="email" id="email" name="email">
             </div>
             <div>
                 <label for="pnumber">Phone Number:
                     <br><p><span>*</span> Optional <span>*</span></p>
                 </label>
-                <input type="text" id="pnumber" name="pnumber" autocomplete="off">
+                <input type="text" id="pnumber" name="pnumber">
             </div>
             <div class="comment">
                 <label for="comment">Comments:</label>

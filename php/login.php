@@ -1,3 +1,34 @@
+<?php
+session_start();
+include 'config.php';
+
+if($_SERVER["REQUEST_METHOD"] === "POST"){
+    $email = trim($_POST['email'] ?: '');
+    $password = trim($_POST['password'] ?: '');
+
+    if($email !== '' && $password !== ''){
+        $stmt = $conn->prepare("SELECT * FROM users WHERE email = ?");
+        $stmt->bind_param("s", $email);
+        $stmt->execute();
+        $result = $stmt->get_result();
+
+        if($row = $result->fetch_assoc()){//If such an email exists
+            if(password_verify($password, $row['password_hash'])){//If the password entered is valid
+                $_SESSION['user_id'] = $row['id'];
+                $_SESSION['user_name'] = $row['first_name'];
+
+                header("Location: index.php");
+                exit;
+            }
+        }
+
+        $stmt->close();
+    }
+
+    $conn->close();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,15 +45,15 @@
 <body>
     <div class="content">
         <img src="../images/tiny_growing_plant.jpg" alt="Tiny Plant">
-        <form action="" method="">
+        <form method="POST">
             <h1>Log In</h1>
             <div>
                 <label for="email">Enter email: </label>
-                <input type="email" id="email" name="email" autocomplete="off"><!--This prevents it from auto filling when u open the page, initially it was filling it with my php developer username and password-->
+                <input type="email" id="email" name="email"><!--This prevents it from auto filling when u open the page, initially it was filling it with my php developer username and password-->
             </div>
             <div>
                 <label for="password">Enter password: </label>
-                <input type="password" id="password" name="password" autocomplete="new-password">
+                <input type="password" id="password" name="password">
             </div>
             <div class="nav">
                 <button type="submit">Log In</button>

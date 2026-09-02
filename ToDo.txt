@@ -1,0 +1,8 @@
+1. Add country code to phone number in contacts and signup
+2. Change input to modern style in signup, login and contacts (remove label)
+3. Add products section in products
+4. Edit current products description in home page. Make it more business-like
+5. Add the about description of the cofounder
+6. Ensure that contacts entered automatically sends an email and whatsapp message to the farm
+7. Create the farm's logo
+8. Add notification to show that the message sent by sb through the contact form has been sent successfully

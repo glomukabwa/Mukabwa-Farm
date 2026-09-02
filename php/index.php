@@ -218,7 +218,7 @@
                 <li class="pages">
                     <h1>Company</h1>
                     <div><a href="http://localhost/MukabwaFarm/php/aboutus.php">About Us</a></div>
-                    <div><a href="http://localhost/MukabwaFarm/php/products.php">Future</a></div>
+                    <div><a href="http://localhost/MukabwaFarm/php/products.php">Products</a></div>
                     <!--<div><a href="#">Testimonials</a></div>-->
                     <div><a href="http://localhost/MukabwaFarm/php/login.php">Log In</a></div>
                     <div><a href="http://localhost/MukabwaFarm/php/signup.php">Sign Up</a></div>
