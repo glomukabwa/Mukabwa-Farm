@@ -9,10 +9,13 @@ if($_SERVER['REQUEST_METHOD'] === "POST"){
     $pnumber = trim($_POST['pnumber'] ?: '');
     $comment = trim($_POST['comment'] ?: '');
 
-    $stmt = $conn->prepare("INSERT INTO contacts (first_name, last_name, email, phone_number, comments)
+    if(!empty($fname) && !empty($lname) && !empty($email) && !empty($pnumber) && !empty($comment)){
+        $stmt = $conn->prepare("INSERT INTO contacts (first_name, last_name, email, phone_number, comments)
                             VALUES (?, ?, ?, ?, ?)");
-    $stmt->bind_param("sssss", $fname, $lname, $email, $pnumber, $comment);
-    $stmt->execute();
+        $stmt->bind_param("sssss", $fname, $lname, $email, $pnumber, $comment);
+        $stmt->execute();
+    }
+    
 }
 ?>
 <!DOCTYPE html>
@@ -47,30 +50,30 @@ if($_SERVER['REQUEST_METHOD'] === "POST"){
     <main>
         <form method="POST">
             <h1>Contact Form</h1>
-            <div>
-                <label for="fname">First name:</label>
-                <input type="text" id="fname" name="fname" >
+            <div class="modernInput">
+                <input type="text" id="fname" name="fname" placeholder="" required>
+                <label for="fname">First name</label>
             </div>
-            <div>
-                <label for="lname">Last name:</label>
-                <input type="text" id="lname" name="lname" >
+            <div class="modernInput">
+                <input type="text" id="lname" name="lname" placeholder="" required>
+                <label for="lname">Last name</label>
             </div>
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
+            <div class="modernInput">
+                <input type="email" id="email" name="email" placeholder="" required>
+                <label for="email">Email</label>
             </div>
-            <div>
-                <label for="pnumber">Phone Number:
-                    <br><p><span>*</span> Optional <span>*</span></p>
-                </label>
-                <input type="text" id="pnumber" name="pnumber">
+            <div class="modernInput">
+                <input type="text" id="pnumber" name="pnumber" placeholder="" required>
+                <label for="pnumber">Phone Number</label>
             </div>
             <div class="comment">
-                <label for="comment">Comments:</label>
                 <p><span>*</span> Please fill in any inquiries or requests you may have <span>*</span></p>
-                <textarea name="comment" id="comment"></textarea>
+                <div class="modernTextArea">
+                    <textarea name="comment" id="comment" placeholder="" required></textarea>
+                    <label for="comment">Comments</label>
+                </div>
             </div>
-            <button>SUBMIT</button>
+            <button id="submitbtn">SUBMIT</button>
         </form>
         <section class="other-contacts">
             <h1>Other Modes of Contact</h1>

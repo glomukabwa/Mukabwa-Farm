@@ -30,42 +30,80 @@ form{
     gap:2rem;
     padding: 4.5rem 5%;/*5% of the remaining space*/
     width:60rem;
-    height: 60rem;
+    height: 62rem;
     margin: 5rem auto;
 }
 
-form label{
-    display:inline-block;
-    width: 25%;
+.modernInput, .modernTextArea{
+    position: relative;
 }
 
-form input{
+.modernInput input{
     border: solid 0.2rem var(--supportcolor);
     background-color: var(--support2);
-    padding: 1rem 1rem;
-    border-radius: 0.5rem;
-    width:70%;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    width:100%;
 }
 
-.comment{
-    display: flex;
-    flex-direction: column;
-    gap:0.5rem;
+.modernInput label{
+    position: absolute;
+    width:fit-content;
+    margin-left: 1.5rem;
+    left:1rem;
+    top:1.2rem;
+    transition:all 0.2s ease;
 }
 
-form textarea{
+.modernInput input:focus + label,
+.modernInput input:not(:placeholder-shown) + label{
+    font-size: 1rem;
+    background-color: var(--lighterbrown);
+    padding:0.1rem 0.5rem;
+    left:0.5rem;
+    top:-0.5rem;
+}
+
+.modernTextArea{
+    position: relative;
+}
+
+.modernTextArea textarea{
     border: solid 0.2rem var(--supportcolor);
     background-color: var(--support2);
-    padding: 1rem 1rem;
-    border-radius: 0.5rem;
-    width:95%; /*Cz I've used 5% for padding*/
-    height:10rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    width:100%;
+    height:12rem;
+    margin-bottom: 1rem;
     white-space: pre-wrap;/* allows wrapping and preserves line breaks when submitting*/
     word-wrap: break-word;/* breaks long words if needed. If you don't pu this and you write a long word, the horizontal scrollbar will appear which I don't want in this case*/
     /*In HTML, this is how u'd do it:
     wrap = "soft" → lines wrap visually, but no line breaks are added when submitted.
     wrap = "hard" → lines wrap visually, and line breaks are added in the submitted text.
     I would've wanted the wrap soft but then I wanted to show the css one here.*/
+}
+
+.modernTextArea label{
+    position: absolute;
+    top:1.2rem;
+    left:2rem;
+    transition: all 0.2s ease;
+}
+
+.modernTextArea textarea:focus + label,
+.modernTextArea textarea:not(:placeholder-shown) + label{
+    font-size: 1rem;
+    background-color: var(--lighterbrown);
+    padding:0.1rem 0.5rem;
+    left:2rem;
+    top:-0.5rem;
+}
+
+.comment{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
 }
 
 form span{

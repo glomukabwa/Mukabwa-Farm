@@ -16,7 +16,7 @@ CREATE TABLE contacts (
     first_name VARCHAR(100) NOT NULL,
     last_name VARCHAR(100) NOT NULL,
     email VARCHAR(100) NOT NULL,
-    phone_number VARCHAR(20),
+    phone_number VARCHAR(20) NOT NULL,
     comments VARCHAR(250) NOT NULL,
     created_at DATE NOT NULL DEFAULT CURRENT_DATE
 );
