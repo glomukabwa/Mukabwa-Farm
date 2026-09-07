@@ -6,7 +6,7 @@ if($_SERVER['REQUEST_METHOD'] === "POST"){
     $fname = trim($_POST['fname'] ?: '');
     $lname = trim($_POST['lname'] ?: '');
     $email = trim($_POST['email'] ?: '');
-    $pnumber = trim($_POST['pnumber'] ?: '');
+    $pnumber = trim($_POST['phone_full'] ?: '');
     $comment = trim($_POST['comment'] ?: '');
 
     if(!empty($fname) && !empty($lname) && !empty($email) && !empty($pnumber) && !empty($comment)){
@@ -25,10 +25,10 @@ if($_SERVER['REQUEST_METHOD'] === "POST"){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacts Page</title>
     <link rel="icon" href="" type="image/x-ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@29.2.3/dist/css/intlTelInput.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/contacts.css">
-    <link rel="stylesheet" href="../phone-number-validation/build/css/intlTelInput.min.css">
 </head>
 <body>
     <header>
@@ -109,11 +109,31 @@ if($_SERVER['REQUEST_METHOD'] === "POST"){
         <p>&copy; 2026 Mukabwa farm - All rights reserved</p>
     </footer>
 
-    <script src="../phone-number-validation/build/js/intlTelInput.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@29.2.3/dist/js/intlTelInput.min.js"></script>
     <script>
-        var pnumber = document.getElementById("pnumber");
-        window.intlTelInput(pnumber,{
-            initialCountry: "ke"
+        const input = document.querySelector("#pnumber");
+
+        const iti = window.intlTelInput(input, {
+            loadUtils: () => import("https://cdn.jsdelivr.net/npm/intl-tel-input@29.2.3/dist/js/utils.js"),
+
+            initialCountry: "ke",
+
+            hiddenInputs: (telInputName) => ({
+                phone: "phone_full"
+            })/*hiddenInputs create a HTML hidden input that will be submitted when the form is submitted
+                phone: "phone_full" :phone gets the full number ie the country code plus the number entered by the user. 
+                we give the combine number (country code + number entered) the name "phone_full". You'll notice that in the PHP code, that is
+                the name I have assigned to the phone number variable in $_POST[]
+                There are other methods you can use with Intl-tel-input, look them up in their website
+               */
+        });
+
+        input.addEventListener("input", function(){
+            if(input.value.trim() !== ""){
+                document.getElementById("phoneNumber").classList.add("has-value");
+            }else{
+                document.getElementById("phoneNumber").classList.remove("has-value");
+            }
         });
     </script>
 </body>

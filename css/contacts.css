@@ -64,31 +64,47 @@ form{
     top:-0.5rem;
 }
 
-.modernInput:focus-within label,/*This means apply this styling when something inside .modernInput is focused. And apply it "label"*/
-.modernInput:has(input:not(:placeholder-shown)) label{
-    font-size: 1rem;
-    background-color: var(--lighterbrown);
-    padding:0.1rem 0.5rem;
-    left:0.5rem;
-    top:-0.5rem;
-}
-
 #phoneNumber .iti {/*Makes the phone input the same size with the rest. It had changed and started t=following the phone-code library's width*/
     width:100%;
 }
 
-#phoneNumber .iti__selected-flag{
-    padding-left: 2.4rem;
+#phoneNumber .iti__selected-country{/*Target the selected country flag and code*/
+    padding-left: 1.4rem;
     padding-right: 1rem;
     border-radius: 2rem;
 }
 
-#phoneNumber label{
-    left:5rem;
+#phoneNumber .iti__search-input{/*Targets the text inside the search input field in the dropdown*/
+    padding-left: 3.5rem;
 }
 
-#phoneNumber input{
-    padding-left:6.5rem;
+#phoneNumber button::after{
+    content: "";
+}
+
+#phoneNumber button:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+#phoneNumber select{
+    padding-left:1rem;
+}
+
+#phoneNumber label{
+    left:10rem;
+}
+
+#phoneNumber:focus-within label, /*This means apply this styling when something inside .modernInput is focused. And apply it "label"*/
+#phoneNumber.has-value label{/*This means apply the styling if user has typed sth. This is not plain css, I've added code in JS to 
+    add the class .has-value if the input is empty.
+    PLZ NOTE:
+         Do not add a space btwn "#phoneNumber" and ".has-value". With the space it means: Find an element with class has-value 
+         INSIDE #phoneNumber, and then find its label. Without the space it means, check if a class ".has-value" is attached to #phoneNumber*/
+    font-size: 1rem;
+    background-color: var(--lighterbrown);
+    padding:0.1rem 0.5rem;
+    top:-0.5rem;
 }
 
 #phoneNumber input::placeholder{/*The default of the placeholder is to be invisible*/
