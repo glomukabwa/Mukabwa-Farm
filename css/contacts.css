@@ -64,6 +64,41 @@ form{
     top:-0.5rem;
 }
 
+.modernInput:focus-within label,/*This means apply this styling when something inside .modernInput is focused. And apply it "label"*/
+.modernInput:has(input:not(:placeholder-shown)) label{
+    font-size: 1rem;
+    background-color: var(--lighterbrown);
+    padding:0.1rem 0.5rem;
+    left:0.5rem;
+    top:-0.5rem;
+}
+
+#phoneNumber .iti {/*Makes the phone input the same size with the rest. It had changed and started t=following the phone-code library's width*/
+    width:100%;
+}
+
+#phoneNumber .iti__selected-flag{
+    padding-left: 2.4rem;
+    padding-right: 1rem;
+    border-radius: 2rem;
+}
+
+#phoneNumber label{
+    left:5rem;
+}
+
+#phoneNumber input{
+    padding-left:6.5rem;
+}
+
+#phoneNumber input::placeholder{/*The default of the placeholder is to be invisible*/
+    opacity:0;
+}
+
+#phoneNumber:focus-within input::placeholder{/*If there's any focus within the phoneInput then it'll be shown*/
+    opacity:1;
+}
+
 .modernTextArea{
     position: relative;
 }
@@ -87,7 +122,7 @@ form{
 .modernTextArea label{
     position: absolute;
     top:1.2rem;
-    left:2rem;
+    left:2.4rem;
     transition: all 0.2s ease;
 }
 
@@ -106,7 +141,7 @@ form{
     gap:0.5rem;
 }
 
-form span{
+#asterik{
     color: red;
 }
 

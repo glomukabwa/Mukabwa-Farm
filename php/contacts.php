@@ -28,6 +28,7 @@ if($_SERVER['REQUEST_METHOD'] === "POST"){
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/contacts.css">
+    <link rel="stylesheet" href="../phone-number-validation/build/css/intlTelInput.min.css">
 </head>
 <body>
     <header>
@@ -62,12 +63,12 @@ if($_SERVER['REQUEST_METHOD'] === "POST"){
                 <input type="email" id="email" name="email" placeholder="" required>
                 <label for="email">Email</label>
             </div>
-            <div class="modernInput">
-                <input type="text" id="pnumber" name="pnumber" placeholder="" required>
+            <div class="modernInput" id="phoneNumber">
+                <input type="tel" id="pnumber" name="pnumber" placeholder="712345678" required>
                 <label for="pnumber">Phone Number</label>
             </div>
             <div class="comment">
-                <p><span>*</span> Please fill in any inquiries or requests you may have <span>*</span></p>
+                <p><span id="asterik">*</span> Please fill in any inquiries or requests you may have <span id="asterik">*</span></p>
                 <div class="modernTextArea">
                     <textarea name="comment" id="comment" placeholder="" required></textarea>
                     <label for="comment">Comments</label>
@@ -107,5 +108,13 @@ if($_SERVER['REQUEST_METHOD'] === "POST"){
     <footer>
         <p>&copy; 2026 Mukabwa farm - All rights reserved</p>
     </footer>
+
+    <script src="../phone-number-validation/build/js/intlTelInput.min.js"></script>
+    <script>
+        var pnumber = document.getElementById("pnumber");
+        window.intlTelInput(pnumber,{
+            initialCountry: "ke"
+        });
+    </script>
 </body>
 </html>
