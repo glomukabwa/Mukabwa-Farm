@@ -2,6 +2,8 @@
 session_start();
 include('config.php');
 
+$success=false;
+
 if($_SERVER['REQUEST_METHOD'] === "POST"){
     $fname = trim($_POST['fname'] ?: '');
     $lname = trim($_POST['lname'] ?: '');
@@ -14,6 +16,9 @@ if($_SERVER['REQUEST_METHOD'] === "POST"){
                             VALUES (?, ?, ?, ?, ?)");
         $stmt->bind_param("sssss", $fname, $lname, $email, $pnumber, $comment);
         $stmt->execute();
+        if($stmt->affected_rows > 0){
+            $success=true;
+        }
     }
     
 }
@@ -68,10 +73,10 @@ if($_SERVER['REQUEST_METHOD'] === "POST"){
                 <label for="pnumber">Phone Number</label>
             </div>
             <div class="comment">
-                <p><span id="asterik">*</span> Please fill in any inquiries or requests you may have <span id="asterik">*</span></p>
+                <p><span id="asterik">*</span> Please fill in any inquiries or requests that you may have <span id="asterik">*</span></p>
                 <div class="modernTextArea">
                     <textarea name="comment" id="comment" placeholder="" required></textarea>
-                    <label for="comment">Comments</label>
+                    <label for="comment">Inquiries/Requests</label>
                 </div>
             </div>
             <button id="submitbtn">SUBMIT</button>
@@ -104,6 +109,24 @@ if($_SERVER['REQUEST_METHOD'] === "POST"){
                 </div>
             </div>
         </section>
+        <div class="successBackground">
+            <div class="successDiv">
+                <p class="circle">.</p>
+                <img src="../images/check.png" alt="success tick">
+                <h1>Success!</h1>
+                <p>Your inquires/requests have been submitted successfully😊.</p>
+                <button type="button" class="successOkay">OKAY</button>
+            </div>
+        </div>
+        <div class="errorBackground">
+            <div class="errorDiv">
+                <p class="circle">.</p>
+                <img src="../images/remove.png" alt="error X">
+                <h1>Failed</h1>
+                <p>Your inquires/requests have not been submitted. Please try again☹️.</p>
+                <button type="button" class="errorOkay">OKAY</button>
+            </div>
+        </div>
     </main>
     <footer>
         <p>&copy; 2026 Mukabwa farm - All rights reserved</p>
@@ -135,6 +158,45 @@ if($_SERVER['REQUEST_METHOD'] === "POST"){
                 document.getElementById("phoneNumber").classList.remove("has-value");
             }
         });
+
+        const successConfirmation = document.querySelector(".successBackground");
+        const errorConfirmation = document.querySelector(".errorBackground");
+
+        <?php 
+        if($_SERVER['REQUEST_METHOD'] === "POST"){/*If the button has submitted... */
+            if($success == true){
+                /*The reason I don't need to use onclick to check if the button has submitted first
+                here is cz php does that job for me (the php at the complete top). Php receives the form and 
+                only processes it if it is a "POST" (checking of submission) then assigns the value true to $success 
+                So here we put another if($_SERVER['REQUEST_METHOD'] === "POST") bcz the default value of $success is false
+                and we don't want the error message condition to be fulfilled before the submission button is clicked cz then
+                it will diplay the error message when the page reloads. Then we check whether $success is true or false and
+                display the respective popup 
+                Also, sth u should know is that js runs before php so if we had used onsubmit(), it would
+                be running even before a check has been done.*/
+                ?>
+                successConfirmation.classList.add("show");
+                <?php
+            }else{
+                ?>
+                errorConfirmation.classList.add("show");
+                <?php
+            }
+        }
+        
+        ?>
+
+        const successOkay = document.querySelector(".successOkay");
+        const errorOkay = document.querySelector(".errorOkay");
+
+        successOkay.onclick = () => {
+            successConfirmation.classList.remove("show");
+        }
+
+        errorOkay.onclick = () =>{
+            errorConfirmation.classList.remove("show");
+        }
+        
     </script>
 </body>
 </html>

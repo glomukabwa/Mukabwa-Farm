@@ -1,4 +1,3 @@
-Add notification to show that the message sent by sb through the contact form has been sent successfully
 Ensure that contacts entered automatically send an email and whatsapp message to the farm
 Change input to modern style in signup and login(remove label)
 Add products section in products
